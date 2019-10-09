@@ -1,0 +1,54 @@
+/*
+ * #%L
+ * tmmodel
+ * %%
+ * Copyright (C) 2019 Michael Berger
+ * %%
+ * This program is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as
+ * published by the Free Software Foundation, either version 3 of the 
+ * License, or (at your option) any later version.
+ * 
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ * 
+ * You should have received a copy of the GNU General Public 
+ * License along with this program.  If not, see
+ * <http://www.gnu.org/licenses/gpl-3.0.html>.
+ * #L%
+ */
+
+package com.mbb.TicketMaven.model.filter;
+
+import java.util.Collection;
+
+import com.mbb.TicketMaven.model.TicketModel;
+import com.mbb.TicketMaven.model.entity.Ticket;
+import com.mbb.TicketMaven.util.Errmsg;
+
+/**  filters tickets for a given show */
+public class TicketsForShowFilter implements KeyedEntityFilter<Ticket> {
+
+	private int show_id;
+	public TicketsForShowFilter( int s )
+	{
+		show_id = s;
+	}
+	
+
+	@Override
+	public Collection<Ticket> getMatchingEntities() {
+		
+		try {
+			Collection<Ticket> beans = TicketModel.getReference().getTicketsForShow(show_id);			
+			return beans;
+		} catch (Exception e) {
+			Errmsg.getErrorHandler().errmsg(e);
+		}
+		return null;
+		
+	}
+
+}

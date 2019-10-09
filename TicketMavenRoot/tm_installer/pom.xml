@@ -1,0 +1,243 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<artifactId>TicketMavenRoot</artifactId>
+		<groupId>TicketMaven</groupId>
+		<version>1.5</version>
+		<relativePath>..</relativePath>
+	</parent>
+	<artifactId>tm_installer</artifactId>
+	<packaging>izpack-jar</packaging>
+
+<profiles>
+		<profile>
+			<id>w
+		</id>
+			<activation>
+				<os>
+					<family>windows</family>
+				</os>
+			</activation>
+			<build>
+				<plugins>
+					<plugin>
+						<artifactId>exec-maven-plugin</artifactId>
+						<groupId>org.codehaus.mojo</groupId>
+						<executions>
+							<execution>
+								<id>Build JRE from JDK</id>
+								<phase>generate-sources</phase>
+								<goals>
+									<goal>exec</goal>
+								</goals>
+							</execution>
+						</executions>
+						<configuration>
+							<executable>cmd</executable>
+							<arguments>
+								<argument>/C</argument>
+								<argument>buildjre.bat</argument>
+								<!-- JAVA_HOME -->
+								<argument>c:\jdk-12</argument>
+							</arguments>
+						</configuration>
+					</plugin>
+				</plugins>
+			</build>
+
+		</profile>
+		<profile>
+		<id>l</id>
+			<activation>
+				<os>
+					<family>!windows</family>
+				</os>
+			</activation>
+			<build>
+				<plugins>
+					<plugin>
+						<artifactId>exec-maven-plugin</artifactId>
+						<groupId>org.codehaus.mojo</groupId>
+						<executions>
+							<execution>
+								<id>Build JRE from JDK</id>
+								<phase>generate-sources</phase>
+								<goals>
+									<goal>exec</goal>
+								</goals>
+							</execution>
+						</executions>
+						<configuration>
+							<executable>bash</executable>
+							<arguments>
+								<argument>buildjre.sh</argument>
+								
+							</arguments>
+						</configuration>
+					</plugin>
+				</plugins>
+			</build>
+
+		</profile>
+	</profiles>
+
+	<build>
+		<plugins>
+			<plugin>
+				<artifactId>exec-maven-plugin</artifactId>
+				<groupId>org.codehaus.mojo</groupId>
+				<executions>
+					<execution>
+						<id>Build JRE from JDK</id>
+						<phase>generate-sources</phase>
+						<goals>
+							<goal>exec</goal>
+						</goals>
+					</execution>
+				</executions>
+				<configuration>
+					<executable>cmd</executable>
+					<arguments>
+						<argument>/C</argument>
+						<argument>buildjre.bat</argument>
+						<!-- JAVA_HOME -->
+						<argument>c:\jdk-12</argument>
+					</arguments>
+				</configuration>
+			</plugin>
+			<plugin>
+				<groupId>org.codehaus.izpack</groupId>
+				<artifactId>izpack-maven-plugin</artifactId>
+				<version>${izpack-version}</version>
+				<extensions>true</extensions>
+				<configuration>
+					<baseDir>${project.build.directory}/installer</baseDir>
+					<installFile>${basedir}/installer/install.xml</installFile>
+					<outputDirectory>${project.build.directory}</outputDirectory>
+					<finalName>${project.build.finalName}</finalName>
+					<enableOverrideArtifact>true</enableOverrideArtifact>
+					<enableAttachArtifact>true</enableAttachArtifact>
+					<mkdirs>true</mkdirs>
+					<autoIncludeUrl>false</autoIncludeUrl>
+					<autoIncludeDevelopers>false</autoIncludeDevelopers>
+				</configuration>
+			</plugin>
+			<plugin>
+				<groupId>com.akathist.maven.plugins.launch4j</groupId>
+				<artifactId>launch4j-maven-plugin</artifactId>
+				<version>${launch4j-version}</version>
+
+				<executions>
+					<execution>
+						<id>l4j-clui</id>
+						<phase>package</phase>
+						<goals>
+							<goal>launch4j</goal>
+						</goals>
+						<configuration>
+							<headerType>gui</headerType>
+							<outfile>target/${project.build.finalName}.exe</outfile>
+							<jar>target/${project.build.finalName}.jar</jar>
+							<jre>
+								<path>jre</path>
+								<bundledJre64Bit>true</bundledJre64Bit>
+								<bundledJreAsFallback>false</bundledJreAsFallback>
+								<minVersion>10</minVersion>
+								<maxVersion></maxVersion>
+								<jdkPreference>jdkOnly</jdkPreference>
+								<runtimeBits>64/32</runtimeBits>
+							</jre>
+						</configuration>
+					</execution>
+				</executions>
+			</plugin>
+			<plugin>
+				<artifactId>maven-antrun-plugin</artifactId>
+				<version>1.7</version>
+				<inherited>false</inherited>
+				<executions>
+					<execution>
+						<id>default-cli</id>
+						<phase>process-resources</phase>
+						<goals>
+							<goal>run</goal>
+						</goals>
+						<configuration>
+							<target>
+								<property name="version" value="${project.version}" />
+
+
+								<mkdir dir="target/installer" />
+								<mkdir dir="target/installer/lib" />
+								<mkdir dir="target/installer/samples" />
+								<mkdir dir="target/installer/lib/licenses" />
+								<copy file="../tmui/src/main/resources/resource/tm.jpg"
+									todir="target/installer" />
+								<copy
+									file="LICENSE.txt"
+									todir="target/installer" />
+
+								<copy todir="target/installer">
+									<fileset dir="installer" includes="*" />
+								</copy>
+								<copy todir="target/installer/lib">
+									<fileset dir="../tmui/target/lib" includes="*" />
+								</copy>
+								<copy todir="target/installer/samples">
+									<fileset dir="../tmui/src/main/resources/samples"
+										includes="*" />
+								</copy>
+								<copy file="../tmui/target/tmui-${project.version}.jar"
+									tofile="target/installer/TicketMaven.jar" />
+								<copy file="../tmui/target/TicketMaven.exe"
+									tofile="target/installer/TicketMaven.exe" />
+
+								<copy todir="target/installer/lib/licenses">
+									<fileset dir="licenses" includes="*" />
+								</copy>
+
+
+							</target>
+						</configuration>
+					</execution>
+				</executions>
+			</plugin>
+
+		</plugins>
+	</build>
+
+	<dependencies>
+
+		<dependency>
+			<groupId>TicketMaven</groupId>
+			<artifactId>tmui</artifactId>
+			<version>1.5</version>
+			<scope>runtime</scope>
+		</dependency>
+		<dependency>
+			<groupId>TicketMaven</groupId>
+			<artifactId>tmmodel</artifactId>
+			<version>1.5</version>
+			<scope>runtime</scope>
+		</dependency>
+		<dependency>
+			<groupId>TicketMaven</groupId>
+			<artifactId>tmutil</artifactId>
+			<version>1.5</version>
+			<scope>runtime</scope>
+		</dependency>
+		<dependency>
+			<groupId>TicketMaven</groupId>
+			<artifactId>tmlicense</artifactId>
+			<version>1.5</version>
+			<scope>runtime</scope>
+		</dependency>
+		<dependency>
+			<groupId>TicketMaven</groupId>
+			<artifactId>tmhelp</artifactId>
+			<version>1.5</version>
+		</dependency>
+	</dependencies>
+</project>

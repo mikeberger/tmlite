@@ -1,0 +1,8 @@
+build/
+dist/
+target/
+.settings/
+/TicketMavenRoot/tmui/src/main/resources/properties
+.classpath
+.project
+*.prefs

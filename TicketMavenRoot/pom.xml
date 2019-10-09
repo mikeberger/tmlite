@@ -1,0 +1,141 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<groupId>TicketMaven</groupId>
+	<artifactId>TicketMavenRoot</artifactId>
+	<version>1.5</version>
+	<packaging>pom</packaging>
+
+	<name>TicketMavenRoot</name>
+	<url>http://mbcsoft.com</url>
+	<inceptionYear>2019</inceptionYear>
+	<organization>
+		<name>Michael Berger</name>
+	</organization>
+	<licenses>
+		<license>
+			<name>GNU General Public License - Version 3</name>
+			<url>http://www.gnu.org/licenses/gpl-3.0.en.html</url>
+			<distribution>repo</distribution>
+		</license>
+	</licenses>
+
+
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<launch4j-version>1.7.22</launch4j-version>
+		<izpack-version>5.1.3</izpack-version>
+	</properties>
+
+	<modules>
+		<!-- <module>LicenseTool</module> -->
+		<module>tmutil</module>
+		<module>tmui</module>
+		<module>tmmodel</module>
+		<!-- <module>tmlicense</module> -->
+		<module>tmhelp</module>
+		<module>tm_installer</module>
+		<!-- <module>LicToolInstaller</module> -->
+	</modules>
+	<build>
+		<plugins>
+
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>3.7.0</version>
+				<configuration>
+					<source>12</source>
+					<target>12</target>
+				</configuration>
+				<dependencies>
+					<dependency>
+						<groupId>org.ow2.asm</groupId>
+						<artifactId>asm</artifactId>
+						<version>6.1.1</version>
+					</dependency>
+				</dependencies>
+			</plugin>
+			<plugin>
+				<groupId>org.codehaus.mojo</groupId>
+				<artifactId>license-maven-plugin</artifactId>
+				<version>1.0</version>
+				<executions>
+					<execution>
+						<id>third-party</id>
+						<phase>deploy</phase>
+						<goals>
+							<goal>aggregate-add-third-party</goal>
+							<goal>download-licenses</goal>
+						</goals>
+						<configuration />
+					</execution>
+				</executions>
+			</plugin>
+			<plugin>
+				<groupId>org.codehaus.mojo</groupId>
+				<artifactId>versions-maven-plugin</artifactId>
+				<version>1.2</version>
+				<executions>
+					<execution>
+						<id>dep-check</id>
+						<phase>deploy</phase>
+						<goals>
+							<goal>display-dependency-updates</goal>
+							<goal>display-plugin-updates</goal>
+							<goal>display-property-updates</goal>
+						</goals>
+						<configuration />
+					</execution>
+				</executions>
+			</plugin>
+		
+		</plugins>
+	</build>
+	<dependencyManagement>
+		<dependencies>
+
+			<dependency>
+				<groupId>junit</groupId>
+				<artifactId>junit</artifactId>
+				<version>4.12</version>
+				<scope>test</scope>
+			</dependency>
+			<dependency>
+				<groupId>org.hsqldb</groupId>
+				<artifactId>hsqldb</artifactId>
+				<version>2.4.1</version>
+				<scope>test</scope>
+			</dependency>
+			<dependency>
+				<groupId>jgraph</groupId>
+				<artifactId>jgraph</artifactId>
+				<version>5.13.0.0</version>
+			</dependency>
+			<dependency>
+				<groupId>com.toedter</groupId>
+				<artifactId>jcalendar</artifactId>
+				<version>1.4</version>
+			</dependency>
+			<dependency>
+				<groupId>javax.help</groupId>
+				<artifactId>javahelp</artifactId>
+				<version>2.0.05</version>
+			</dependency>
+			<dependency>
+				<groupId>net.sf.jasperreports</groupId>
+				<artifactId>jasperreports</artifactId>
+				<version>6.7.0</version>
+			</dependency>
+			<dependency>
+				<groupId>com.jgoodies</groupId>
+				<artifactId>looks</artifactId>
+				<version>2.2.2</version>
+				<scope>runtime</scope>
+			</dependency>
+		</dependencies>
+	</dependencyManagement>
+
+</project>

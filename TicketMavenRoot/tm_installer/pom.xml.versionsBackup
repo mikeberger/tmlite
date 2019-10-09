@@ -1,0 +1,111 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<artifactId>TicketMavenRoot</artifactId>
+		<groupId>TicketMaven</groupId>
+		<version>1.4</version>
+		<relativePath>..</relativePath>
+	</parent>
+	<artifactId>tm_installer</artifactId>
+	<build>
+		<plugins>
+			<plugin>
+				<artifactId>maven-antrun-plugin</artifactId>
+				<version>1.7</version>
+				<inherited>false</inherited>
+				<executions>
+					<execution>
+						<id>izpack</id>
+						<phase>package</phase>
+						<goals>
+							<goal>run</goal>
+						</goals>
+						<configuration>
+							<target>
+								<property name="version" value="${project.version}" />
+
+								<condition property="iz.dir" value="c:/IzPack" else="/apps/IzPack">
+									<os family="windows" />
+								</condition>
+								<taskdef name="izpack" classpath="${iz.dir}/lib/standalone-compiler.jar"
+									classname="com.izforge.izpack.ant.IzPackTask" />
+
+								<mkdir dir="target/installer" />
+								<mkdir dir="target/installer/lib" />
+								<mkdir dir="target/installer/lib/licenses" />
+								<copy file="../tmui/src/main/resources/resource/tm.jpg"
+									todir="target/installer" />
+								<copy file="../tmui/src/main/resources/resource/TM_LICENSE.html"
+									todir="target/installer" />
+								<copy file="${iz.dir}/bin/native/izpack/ShellLink.dll"
+									todir="target/installer" />
+								<copy todir="target/installer">
+									<fileset dir="installer" includes="*" />
+								</copy>
+								<copy todir="target/installer/lib">
+									<fileset dir="../tmui/target/lib" includes="*" />
+								</copy>
+								<copy file="../tmui/target/tmui-${project.version}.jar" tofile="target/installer/TicketMaven.jar" />
+
+								<copy todir="target/installer/lib/licenses">
+									<fileset dir="licenses" includes="*" />
+								</copy>
+								<izpack input="tm_installer/target/installer/install.xml"
+									inheritAll="true"
+									output="tm_installer/target/tm_installer-${project.version}.jar"
+									installerType="standard" basedir="tm_installer/target/installer"
+									izPackDir="${iz.dir}/" />
+
+								<copy todir="target" file="${iz.dir}/utils/wrappers/izpack2exe/7zS.sfx" />
+
+								<exec dir="target" executable="python">
+									<arg value="${iz.dir}/utils/wrappers/izpack2exe/izpack2exe.py" />
+									<arg value="--with-7z=7z" />
+									<arg value="--file=tm_installer-${project.version}.jar" />
+									<arg value="--output=tm_installer-${project.version}.exe" />
+									<arg value="--no-upx" />
+								</exec>
+
+
+							</target>
+						</configuration>
+					</execution>
+				</executions>
+			</plugin>
+
+		</plugins>
+	</build>
+
+	<dependencies>
+		<dependency>
+			<groupId>TicketMaven</groupId>
+			<artifactId>tmui</artifactId>
+			<version>1.4</version>
+			<scope>runtime</scope>
+		</dependency>
+		<dependency>
+			<groupId>TicketMaven</groupId>
+			<artifactId>tmmodel</artifactId>
+			<version>1.4</version>
+			<scope>runtime</scope>
+		</dependency>
+		<dependency>
+			<groupId>TicketMaven</groupId>
+			<artifactId>tmutil</artifactId>
+			<version>1.4</version>
+			<scope>runtime</scope>
+		</dependency>
+		<dependency>
+			<groupId>TicketMaven</groupId>
+			<artifactId>tmlicense</artifactId>
+			<version>1.4</version>
+			<scope>runtime</scope>
+		</dependency>
+		<dependency>
+			<groupId>TicketMaven</groupId>
+			<artifactId>tmhelp</artifactId>
+			<version>1.4</version>
+		</dependency>
+	</dependencies>
+</project>

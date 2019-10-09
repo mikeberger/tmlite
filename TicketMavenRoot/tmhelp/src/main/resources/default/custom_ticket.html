@@ -1,0 +1,210 @@
+<!--
+  #%L
+  tmhelp
+  %%
+  Copyright (C) 2019 Michael Berger
+  %%
+  This program is free software: you can redistribute it and/or modify
+  it under the terms of the GNU General Public License as
+  published by the Free Software Foundation, either version 3 of the 
+  License, or (at your option) any later version.
+  
+  This program is distributed in the hope that it will be useful,
+  but WITHOUT ANY WARRANTY; without even the implied warranty of
+  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  GNU General Public License for more details.
+  
+  You should have received a copy of the GNU General Public 
+  License along with this program.  If not, see
+  <http://www.gnu.org/licenses/gpl-3.0.html>.
+  #L%
+  -->
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+<HEAD>
+	<META HTTP-EQUIV="CONTENT-TYPE" CONTENT="text/html; charset=utf-8">
+	<TITLE></TITLE>
+	<META NAME="GENERATOR" CONTENT="LibreOffice 3.4  (Linux)">
+	<META NAME="AUTHOR" CONTENT="Joan Berger">
+	<META NAME="CREATED" CONTENT="20111125;22120000">
+	<META NAME="CHANGEDBY" CONTENT="Joan Berger">
+	<META NAME="CHANGED" CONTENT="20111125;22120000">
+	<META NAME="AppVersion" CONTENT="14.0000">
+	<META NAME="DocSecurity" CONTENT="0">
+	<META NAME="HyperlinksChanged" CONTENT="false">
+	<META NAME="LinksUpToDate" CONTENT="false">
+	<META NAME="ScaleCrop" CONTENT="false">
+	<META NAME="ShareDoc" CONTENT="false">
+	<STYLE TYPE="text/css">
+	<!--
+		@page { margin-left: 0.5in; margin-right: 0.8in; margin-top: 0.5in; margin-bottom: 0.5in }
+		TD P { margin-bottom: 0.08in; direction: ltr; color: #000000; widows: 2; orphans: 2 }
+		P { margin-bottom: 0.08in; direction: ltr; color: #000000; widows: 2; orphans: 2 }
+	-->
+	</STYLE>
+</HEAD>
+<BODY LANG="en-US" TEXT="#000000" DIR="LTR">
+<P ALIGN=CENTER STYLE="margin-top: 0.02in; margin-bottom: 0.02in"><FONT COLOR="#800000"><FONT SIZE=4 STYLE="font-size: 16pt"><B>Customized
+Ticket Printing</B></FONT></FONT></P>
+<P STYLE="margin-top: 0.02in; margin-bottom: 0.02in"><FONT SIZE=4>The
+default style used when printing tickets can be customized from the</FONT><FONT COLOR="#800000">
+</FONT><FONT COLOR="#800000"><FONT SIZE=4><I><B>Default Ticket
+Formats</B></I></FONT></FONT> <FONT SIZE=4>tab on the </FONT><FONT SIZE=4><B>File-&gt;Options</B></FONT>
+<FONT SIZE=4>screen.</FONT></P>
+<P STYLE="margin-top: 0.02in; margin-bottom: 0.02in"><FONT SIZE=4>Each
+show can also have its own custom ticket format that is edited via
+the Ticket Format tab in the show details editor.</FONT></P>
+<P STYLE="margin-top: 0.02in; margin-bottom: 0.02in"><FONT SIZE=4>From
+zero to eight lines of text can be printed on a ticket. The text,
+font, and color of each line can be customized. At the default font
+size, 8 lines will fit on the ticket. Fewer lines will fit as font
+size increases.</FONT></P>
+<P STYLE="margin-top: 0.02in; margin-bottom: 0.02in"><FONT SIZE=4>The
+text for each line is printed literally as it is entered in the text
+entry box for that line. However, by entering special “variables”
+in the text, the program can be instructed to insert variable data
+onto the ticket. A variable has the form {v}, where v is the variable
+name which must be enclosed in curly braces.</FONT></P>
+<P STYLE="margin-top: 0.02in; margin-bottom: 0.02in"><FONT SIZE=4>For
+example, {name} is a variable that will be replaced on the ticket by
+the customer name. So, if the Line 1 custom text on the Customize
+Ticket tab is changed to: “Name: {name}”, the ticket preview
+above will show: “Name: Customer Name”. For the preview, {name}
+is replaced by the text “Customer Name”. When printing actual
+show tickets to a printer, {name} would be replaced by the real
+customer name, for example “Name: Joe Smith”.</FONT></P>
+<P STYLE="margin-top: 0.02in; margin-bottom: 0.02in"><FONT SIZE=4>The
+following table summarizes the variables that are available to be
+used within the Customize Ticket lines:</FONT></P>
+<TABLE WIDTH=660 CELLPADDING=5 CELLSPACING=1>
+	<COL WIDTH=141>
+	<COL WIDTH=214>
+	<COL WIDTH=269>
+	<TR VALIGN=TOP>
+		<TD WIDTH=141 STYLE="border: none; padding: 0in">
+			<P ALIGN=CENTER STYLE="margin-top: 0.02in; border-top: 1px double #808080; border-bottom: 1px double #808080; border-left: 1px double #808080; border-right: none; padding-top: 0.06in; padding-bottom: 0.06in; padding-left: 0.06in; padding-right: 0in">
+			<FONT COLOR="#800000"><FONT SIZE=4><B>Variable Name</B></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=214 STYLE="; border: none; padding: 0in">
+			<P ALIGN=CENTER STYLE="margin-top: 0.02in"><FONT COLOR="#800000"><FONT SIZE=4><B>Shown
+			in Preview as:</B></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=269 STYLE="; border: none; padding: 0in">
+			<P ALIGN=CENTER STYLE="margin-top: 0.02in"><FONT COLOR="#800000"><FONT SIZE=4><B>Printing
+			on Tickets Using:</B></FONT></FONT></P>
+		</TD>
+	</TR>
+	<TR VALIGN=TOP>
+		<TD WIDTH=141 STYLE="; border: none; padding: 0in">
+			<P STYLE="margin-top: 0.02in"><FONT COLOR="#0000ff"><FONT SIZE=4><B>{name}</B></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=214 STYLE="; border: none; padding: 0in">
+			<P STYLE="margin-top: 0.02in"><FONT SIZE=4>Customer Name</FONT></P>
+		</TD>
+		<TD WIDTH=269 STYLE="; border: none; padding: 0in">
+			<P STYLE="margin-top: 0.02in"><FONT SIZE=4>The customer name</FONT></P>
+		</TD>
+	</TR>
+	<TR VALIGN=TOP>
+		<TD WIDTH=141 STYLE="; border: none; padding: 0in">
+			<P STYLE="margin-top: 0.02in"><FONT COLOR="#0000ff"><FONT SIZE=4><B>{show}</B></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=214 STYLE="; border: none; padding: 0in">
+			<P STYLE="margin-top: 0.02in"><FONT SIZE=4>Your Show Name</FONT></P>
+		</TD>
+		<TD WIDTH=269 STYLE="; border: none; padding: 0in">
+			<P STYLE="margin-top: 0.02in"><FONT SIZE=4>The show name</FONT></P>
+		</TD>
+	</TR>
+	<TR VALIGN=TOP>
+		<TD WIDTH=141 STYLE="; border: none; padding: 0in">
+			<P STYLE="margin-top: 0.02in"><FONT COLOR="#0000ff"><FONT SIZE=4><B>{price}</B></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=214 STYLE="; border: none; padding: 0in">
+			<P STYLE="margin-top: 0.02in"><FONT SIZE=4>$19.00</FONT></P>
+		</TD>
+		<TD WIDTH=269 STYLE="; border: none; padding: 0in">
+			<P STYLE="margin-top: 0.02in"><FONT SIZE=4>The show price</FONT></P>
+		</TD>
+	</TR>
+	<TR VALIGN=TOP>
+		<TD WIDTH=141 STYLE="; border: none; padding: 0in">
+			<P STYLE="margin-top: 0.02in"><FONT COLOR="#0000ff"><FONT SIZE=4><B>{club}</B></FONT></FONT></P>
+		</TD>
+		<TD COLSPAN=2 WIDTH=494 STYLE="; border: none; padding: 0in">
+			<P STYLE="margin-top: 0.02in"><FONT SIZE=4>The club from the
+			options</FONT></P>
+		</TD>
+	</TR>
+	<TR VALIGN=TOP>
+		<TD WIDTH=141 STYLE="; border: none; padding: 0in">
+			<P STYLE="margin-top: 0.02in"><FONT COLOR="#0000ff"><FONT SIZE=4><B>{date}</B></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=214 STYLE="; border: none; padding: 0in">
+			<P STYLE="margin-top: 0.02in"><FONT SIZE=4>current date/time</FONT></P>
+		</TD>
+		<TD WIDTH=269 STYLE="; border: none; padding: 0in">
+			<P STYLE="margin-top: 0.02in"><FONT SIZE=4>date/time of the show</FONT></P>
+		</TD>
+	</TR>
+	<TR VALIGN=TOP>
+		<TD WIDTH=141 STYLE="; border: none; padding: 0in">
+			<P STYLE="margin-top: 0.02in"><FONT COLOR="#0000ff"><FONT SIZE=4><B>{row}</B></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=214 STYLE="; border: none; padding: 0in">
+			<P STYLE="margin-top: 0.02in"><FONT SIZE=4>A</FONT></P>
+		</TD>
+		<TD WIDTH=269 STYLE="; border: none; padding: 0in">
+			<P STYLE="margin-top: 0.02in"><FONT SIZE=4>Ticketed Row</FONT></P>
+		</TD>
+	</TR>
+	<TR VALIGN=TOP>
+		<TD WIDTH=141 STYLE="; border: none; padding: 0in">
+			<P STYLE="margin-top: 0.02in"><FONT COLOR="#0000ff"><FONT SIZE=4><B>{seat}</B></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=214 STYLE="; border: none; padding: 0in">
+			<P STYLE="margin-top: 0.02in"><FONT SIZE=4>1</FONT></P>
+		</TD>
+		<TD WIDTH=269 STYLE="; border: none; padding: 0in">
+			<P STYLE="margin-top: 0.02in"><FONT SIZE=4>Ticketed Seat</FONT></P>
+		</TD>
+	</TR>
+	<TR VALIGN=TOP>
+		<TD WIDTH=141 STYLE="; border: none; padding: 0in">
+			<P STYLE="margin-top: 0.02in"><FONT COLOR="#0000ff"><FONT SIZE=4><B>{table}</B></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=214 STYLE="; border: none; padding: 0in">
+			<P STYLE="margin-top: 0.02in"><FONT SIZE=4>Table 1</FONT></P>
+		</TD>
+		<TD WIDTH=269 STYLE="; border: none; padding: 0in">
+			<P STYLE="margin-top: 0.02in"><FONT SIZE=4>Reserved Table</FONT></P>
+		</TD>
+	</TR>
+</TABLE>
+<P STYLE="margin-top: 0.02in; margin-bottom: 0.17in"><BR><BR>
+</P>
+<P STYLE="margin-top: 0.02in; margin-bottom: 0.02in"><FONT SIZE=4>The
+background of the ticket can also be customized. </FONT><FONT COLOR="#800000"><FONT SIZE=4><B>The
+</B></FONT></FONT><FONT COLOR="#800000"><FONT SIZE=4><I><B>Background
+Logo</B></I></FONT></FONT> <FONT SIZE=4>button allows you to browse
+for a GIF or JPEG image to use as a ticket background. </FONT>
+</P>
+<P STYLE="margin-top: 0.02in; margin-bottom: 0.02in"><BR><BR>
+</P>
+<P STYLE="margin-top: 0.02in; margin-bottom: 0.02in"><IMG SRC="custom_ticket_html_m24d37c4f.jpg" NAME="Picture 5" ALIGN=BOTTOM WIDTH=1044 HEIGHT=801 BORDER=0></P>
+<P STYLE="margin-top: 0.02in; margin-bottom: 0.02in"><FONT SIZE=4>Any
+image selected will be scaled to fit the ticket, but for the most
+natural, un-scaled results, use an image size of 234x126 pixels.</FONT></P>
+<P STYLE="margin-top: 0.02in; margin-bottom: 0.17in"><IMG SRC="custom_ticket_html_7d821be9.jpg" NAME="Picture 2" ALIGN=BOTTOM WIDTH=357 HEIGHT=183 BORDER=0></P>
+<P STYLE="margin-bottom: 0in"><IMG SRC="custom_ticket_html_m470f8a9.jpg" NAME="Picture 4" ALIGN=BOTTOM WIDTH=327 HEIGHT=180 BORDER=0>
+</P>
+<P STYLE="margin-bottom: 0in"><BR>
+</P>
+<P STYLE="margin-bottom: 0in"><IMG SRC="custom_ticket_html_3c5fd47b.jpg" NAME="Picture 3" ALIGN=BOTTOM WIDTH=327 HEIGHT=168 BORDER=0></P>
+<P STYLE="margin-bottom: 0in"><BR>
+</P>
+<P STYLE="margin-bottom: 0in"><BR>
+</P>
+<P STYLE="margin-bottom: 0in"><IMG SRC="custom_ticket_html_m1fb07d9e.jpg" NAME="Picture 7" ALIGN=BOTTOM WIDTH=320 HEIGHT=181 BORDER=0></P>
+</BODY>
+</HTML>

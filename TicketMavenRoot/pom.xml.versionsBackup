@@ -1,0 +1,73 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<groupId>TicketMaven</groupId>
+	<artifactId>TicketMavenRoot</artifactId>
+	<version>1.4.1</version>
+	<packaging>pom</packaging>
+
+	<name>TicketMavenRoot</name>
+	<url>http://maven.apache.org</url>
+
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+	</properties>
+
+	<modules>
+		<module>LicenseTool</module>
+		<module>tmutil</module>
+		<module>tmui</module>
+		<module>tmmodel</module>
+		<module>tmlicense</module>
+		<module>tmhelp</module>
+		<module>tmserver</module>
+		<module>tm_installer</module>
+	</modules>
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>2.3.2</version>
+				<configuration>
+					<source>1.6</source>
+					<target>1.6</target>
+				</configuration>
+			</plugin>
+			<plugin>
+				<groupId>org.codehaus.mojo</groupId>
+				<artifactId>license-maven-plugin</artifactId>
+				<version>1.0</version>
+				<executions>
+					<execution>
+						<id>third-party</id>
+						<phase>deploy</phase>
+						<goals>
+							<goal>aggregate-add-third-party</goal>
+							<goal>download-licenses</goal>
+						</goals>
+						<configuration/>
+					</execution>
+				</executions>
+			</plugin>
+			<plugin>
+				<groupId>org.codehaus.mojo</groupId>
+				<artifactId>versions-maven-plugin</artifactId>
+				<version>1.2</version>
+				<executions>
+					<execution>
+						<id>dep-check</id>
+						<phase>deploy</phase>
+						<goals>
+							<goal>display-dependency-updates</goal>
+							<goal>display-plugin-updates</goal>
+							<goal>display-property-updates</goal>
+						</goals>
+						<configuration/>
+					</execution>
+				</executions>
+			</plugin>
+		</plugins>
+	</build>
+</project>

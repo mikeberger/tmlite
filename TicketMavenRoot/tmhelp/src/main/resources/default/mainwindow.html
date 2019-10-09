@@ -1,0 +1,249 @@
+<!--
+  #%L
+  tmhelp
+  %%
+  Copyright (C) 2019 Michael Berger
+  %%
+  This program is free software: you can redistribute it and/or modify
+  it under the terms of the GNU General Public License as
+  published by the Free Software Foundation, either version 3 of the 
+  License, or (at your option) any later version.
+  
+  This program is distributed in the hope that it will be useful,
+  but WITHOUT ANY WARRANTY; without even the implied warranty of
+  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  GNU General Public License for more details.
+  
+  You should have received a copy of the GNU General Public 
+  License along with this program.  If not, see
+  <http://www.gnu.org/licenses/gpl-3.0.html>.
+  #L%
+  -->
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+<HEAD>
+	<META HTTP-EQUIV="CONTENT-TYPE" CONTENT="text/html; charset=utf-8">
+	<TITLE></TITLE>
+	<META NAME="GENERATOR" CONTENT="LibreOffice 3.4  (Linux)">
+	<META NAME="AUTHOR" CONTENT="Joan Berger">
+	<META NAME="CREATED" CONTENT="20111124;20130000">
+	<META NAME="CHANGED" CONTENT="20111124;18121500">
+	<META NAME="AppVersion" CONTENT="14.0000">
+	<META NAME="DocSecurity" CONTENT="0">
+	<META NAME="HyperlinksChanged" CONTENT="false">
+	<META NAME="LinksUpToDate" CONTENT="false">
+	<META NAME="ScaleCrop" CONTENT="false">
+	<META NAME="ShareDoc" CONTENT="false">
+	<STYLE TYPE="text/css">
+	<!--
+		@page { margin-left: 0.8in; margin-right: 0.8in; margin-top: 0.5in; margin-bottom: 0.5in }
+		P { margin-bottom: 0.08in; direction: ltr; color: #000000; widows: 2; orphans: 2 }
+	-->
+	</STYLE>
+</HEAD>
+<BODY LANG="en-US" TEXT="#000000" DIR="LTR">
+<P ALIGN=CENTER STYLE="margin-top: 0.02in; margin-bottom: 0.02in"><FONT COLOR="#800000"><FONT SIZE=4 STYLE="font-size: 16pt"><B>The
+Main Window</B></FONT></FONT></P>
+<P STYLE="margin-top: 0.02in; margin-bottom: 0.02in"><FONT SIZE=4>The
+TicketMaven main window consists of a menu bar on top and a set of
+“tabs” on the left.</FONT></P>
+<P STYLE="margin-top: 0.02in; margin-bottom: 0.02in"><FONT SIZE=4>The
+</FONT><FONT SIZE=4><B>Menu Bar</B></FONT> <FONT SIZE=4>provides the
+following menus:</FONT></P>
+<P STYLE="margin-top: 0.02in; margin-bottom: 0.02in"><FONT COLOR="#800000"><FONT SIZE=4><B>File
+Menu</B></FONT></FONT></P>
+<UL>
+	<LI><P STYLE="margin-top: 0.02in; margin-bottom: 0.02in"><FONT SIZE=4><B>Options</B></FONT>
+	– <FONT SIZE=4>brings up a window to edit program options. One of
+	these options is the club/community name to be printed on tickets.</FONT></P>
+</UL>
+<P ALIGN=CENTER STYLE="margin-top: 0.02in; margin-bottom: 0.02in"><IMG SRC="mainwindow_html_3cd8f2a5.jpg" NAME="Picture 1" ALIGN=BOTTOM WIDTH=439 HEIGHT=441 BORDER=0></P>
+<UL>
+	<LI><P STYLE="margin-top: 0.02in; margin-bottom: 0.02in"><FONT SIZE=4><B>Exit</B></FONT>
+	– <FONT SIZE=4>exits the program</FONT></P>
+</UL>
+<P STYLE="margin-top: 0.02in; margin-bottom: 0.02in"><FONT COLOR="#ff0000"><FONT SIZE=4><B>Admin
+(All of the Admin menu items should be used with caution by someone
+with expertise)</B></FONT></FONT></P>
+<UL>
+	<LI><P STYLE="margin-top: 0.02in; margin-bottom: 0.02in"><FONT SIZE=4><B>Import
+	Data</B></FONT> – <FONT SIZE=4>used to import a database file into
+	the program. </FONT>
+	</P>
+	<LI><P STYLE="margin-top: 0.02in; margin-bottom: 0.02in"><FONT SIZE=4><B>Export
+	Data </B></FONT>– <FONT SIZE=4>export the database into a text
+	file. The export is a way to create a full backup of your entire
+	database. The export file can be used to recover a lost database. </FONT>
+	</P>
+	<LI><P STYLE="margin-top: 0.02in; margin-bottom: 0.02in"><FONT SIZE=4><B>Import
+	Customer List from CSV data </B></FONT>– <FONT SIZE=4>this option
+	is used to import customer data in CSV format into the database. The
+	CSV data must be of the form: Last, First, Address, Phone. Customer
+	lists kept in Excel or other spreadsheet programs can be exported
+	into CSV files. </FONT>
+	</P>
+	<LI><P STYLE="margin-top: 0.02in; margin-bottom: 0.02in"><FONT SIZE=4><B>Change
+	Allowed Tickets for All Customers </B></FONT>– <FONT SIZE=4>this
+	is used to change the number of allowed tickets in the customer
+	database for all customers at the same time.</FONT></P>
+	<LI><P STYLE="margin-top: 0.02in; margin-bottom: 0.02in"><FONT SIZE=4><B>Recalculate
+	Quality Totals for All Customers</B></FONT> – <FONT SIZE=4>will
+	cause the program to discard the recorded ticket quality values for
+	ALL customers and recalculate these values based solely on the
+	tickets in the database. Can be used after a show is deleted from
+	the database to remove the quality valu.es from that show's tickets.</FONT></P>
+	<LI><P STYLE="margin-top: 0.02in; margin-bottom: 0.02in"><FONT SIZE=4><B>Erase
+	Quality Totals for All Customers – </B></FONT><FONT SIZE=4>will
+	discard all prior quality values for all customers. </FONT>
+	</P>
+	<LI><P STYLE="margin-top: 0.02in; margin-bottom: 0.02in"><FONT SIZE=4><B>Database
+	Information – </B></FONT><FONT SIZE=4>shows information about the
+	contents of the database</FONT></P>
+	<LI><P STYLE="margin-top: 0.02in; margin-bottom: 0.02in"><FONT SIZE=4><B>Run
+	SQL – </B></FONT><FONT SIZE=4>this option provides direct SQL
+	access to the database and is meant to be used by only by MBCSoft to
+	provide certain support functions if needed.</FONT></P>
+	<LI><P STYLE="margin-top: 0.02in; margin-bottom: 0.02in"><FONT SIZE=4><B>Import/Export
+	User Preferences – </B></FONT><FONT SIZE=4>these options will
+	backup and restore the user preferences.</FONT></P>
+</UL>
+<P STYLE="margin-top: 0.02in; margin-bottom: 0.02in"><BR><BR>
+</P>
+<P STYLE="margin-top: 0.02in; margin-bottom: 0.02in"><IMG SRC="mainwindow_html_27a8780f.jpg" NAME="Picture 7" ALIGN=BOTTOM WIDTH=394 HEIGHT=311 BORDER=0></P>
+<P STYLE="margin-top: 0.02in; margin-bottom: 0.02in"><BR><BR>
+</P>
+<P STYLE="margin-top: 0.02in; margin-bottom: 0.02in"><BR><BR>
+</P>
+<P STYLE="margin-top: 0.02in; margin-bottom: 0.02in"><FONT COLOR="#800000"><FONT SIZE=4><B>Reports
+</B></FONT></FONT>
+</P>
+<UL>
+	<LI><P STYLE="margin-top: 0.02in; margin-bottom: 0.02in"><FONT SIZE=4>The
+	reports menu provides access to a number of reports that can be used
+	to manage your ticketing process. For example, some of these reports
+	are intended to aid in the assignment of show-night ticket purchases
+	for any unassigned seats. </FONT>
+	</P>
+</UL>
+<P ALIGN=CENTER STYLE="margin-top: 0.02in; margin-bottom: 0.02in"><BR><BR>
+</P>
+<P STYLE="margin-top: 0.02in; margin-bottom: 0.02in"><IMG SRC="mainwindow_html_1d1badce.jpg" NAME="Picture 5" ALIGN=BOTTOM WIDTH=586 HEIGHT=560 BORDER=0></P>
+<P STYLE="margin-top: 0.02in; margin-bottom: 0.02in"><BR><BR>
+</P>
+<P STYLE="margin-top: 0.02in; margin-bottom: 0.02in"><BR><BR>
+</P>
+<P STYLE="margin-top: 0.02in; margin-bottom: 0.02in"><BR><BR>
+</P>
+<P STYLE="margin-top: 0.02in; margin-bottom: 0.02in"><FONT COLOR="#800000"><FONT SIZE=4><B>Print
+Tickets</B></FONT></FONT></P>
+<UL>
+	<LI><P STYLE="margin-top: 0.02in; margin-bottom: 0.02in"><FONT SIZE=4>Various
+	methods are provided to print different sets of tickets to a
+	standard sheet of 10 business cards.</FONT></P>
+</UL>
+<P STYLE="margin-top: 0.02in; margin-bottom: 0.02in"><FONT SIZE=4>On
+the left are a number of tabs. Selecting a particular tab will change
+the contents of the main window. These tabs are:</FONT></P>
+<UL>
+	<LI><P STYLE="margin-top: 0.02in; margin-bottom: 0.02in"><FONT SIZE=4><B>Show
+	Manager</B></FONT> – <FONT SIZE=4>to view and manage the list of
+	shows</FONT></P>
+	<LI><P STYLE="margin-top: 0.02in; margin-bottom: 0.02in"><FONT SIZE=4><B>Package
+	Manager </B></FONT>– <FONT SIZE=4>to create and manage packages of
+	shows</FONT></P>
+	<LI><P STYLE="margin-top: 0.02in; margin-bottom: 0.02in"><FONT SIZE=4><B>Customer
+	Manager</B></FONT> – <FONT SIZE=4>to view and manage the customer
+	database</FONT></P>
+	<LI><P STYLE="margin-top: 0.02in; margin-bottom: 0.02in"><FONT SIZE=4><B>Theater
+	Layout</B></FONT> – <FONT SIZE=4>to view and manage the seating
+	arrangement for the theater</FONT></P>
+	<LI><P STYLE="margin-top: 0.02in; margin-bottom: 0.02in"><FONT SIZE=4><B>Ticket
+	Requests</B></FONT> – <FONT SIZE=4>to view manage the </FONT><FONT SIZE=4><I><B>unassigned
+	</B></I></FONT><FONT SIZE=4>requests for tickets. These include
+	requests for shows that have not had an assignment lottery run and
+	also requests that “lost” (i.e. did not get tickets) in an
+	assignment lottery.</FONT></P>
+	<LI><P STYLE="margin-top: 0.02in; margin-bottom: 0.02in"><FONT SIZE=4><B>Assigned
+	Tickets</B></FONT> – <FONT SIZE=4>to view and manage tickets that
+	have been assigned</FONT></P>
+	<LI><P STYLE="margin-top: 0.02in; margin-bottom: 0.02in"><FONT SIZE=4><B>Reservations
+	</B></FONT>– <FONT SIZE=4>to view and manage Reservations, which
+	are tickets for shows with table seating.</FONT></P>
+	<LI><P STYLE="margin-top: 0.02in; margin-bottom: 0.02in"><FONT SIZE=4><B>Lottery
+	Manager </B></FONT>– <FONT SIZE=4>to run ticket lotteries</FONT></P>
+</UL>
+<P ALIGN=CENTER STYLE="margin-top: 0.02in; margin-bottom: 0.02in"><BR><BR>
+</P>
+<P STYLE="margin-top: 0.02in; margin-bottom: 0.02in"><IMG SRC="mainwindow_html_2cac7716.jpg" NAME="Picture 6" ALIGN=BOTTOM WIDTH=563 HEIGHT=494 BORDER=0></P>
+<P STYLE="margin-top: 0.02in; margin-bottom: 0.02in"><FONT SIZE=4>The
+layouts of these five tabs are similar. This is to give the user the
+same experience when managing any of the five main data items that
+the program maintains. </FONT>
+</P>
+<P STYLE="margin-top: 0.02in; margin-bottom: 0.02in"><FONT SIZE=4>Most
+of the five tabs manage lists of data (i.e. customers, shows…). The
+top of the tab may optionally contain a set of filter criteria. The
+middle of the tab will often contain a scrollable table of data. Each
+row of the table will correspond to one data item in the database.
+The bottom of the tab contains a detailed view of a single row of
+data.</FONT></P>
+<P STYLE="margin-top: 0.02in; margin-bottom: 0.02in"><FONT COLOR="#800000"><FONT SIZE=4><B>Filter
+Criteria</B></FONT></FONT></P>
+<P STYLE="margin-top: 0.02in; margin-bottom: 0.02in"><FONT SIZE=4>The
+filter criteria is used to limit which rows are shown in a table. The
+data tables can grow to large sizes, and by default the program will
+only show a maximum of 5000 rows in the data table at a time. So, for
+example, if the database contains a total 200,000 tickets for all
+shows, and the user wants to see only the tickets for a particular
+show, the filter criteria on the Assigned Tickets tab can be used to
+limit the display to show only tickets for that show. </FONT>
+</P>
+<P STYLE="margin-top: 0.02in; margin-bottom: 0.02in"><FONT COLOR="#800000"><FONT SIZE=4><B>Editing
+Data</B></FONT></FONT></P>
+<P STYLE="margin-top: 0.02in; margin-bottom: 0.02in"><FONT SIZE=4>To
+edit a single data item (such as a single customer within the
+Customer Manager tab or a single show from within the Show Manager
+tab), first select the row to be edited in the table with the mouse.
+The row should be highlighted in the table, and the detailed
+information for that row should be displayed below the table. The
+border title around the detailed information should now say “Edit
+xxx” (i.e. Edit Customer Information). The detailed information can
+now be changed. To save the updated information, press the Save
+button on the bottom of the window and the changes are saved in the
+database.</FONT></P>
+<P STYLE="margin-top: 0.02in; margin-bottom: 0.02in"><FONT COLOR="#800000"><FONT SIZE=4><B>Entering
+New Data</B></FONT></FONT></P>
+<P STYLE="margin-top: 0.02in; margin-bottom: 0.02in"><FONT SIZE=4>If
+no row of the data table is highlighted and the border around the
+detailed information has the title “Enter New xxxx” and is in
+red, then the detailed information will be saved as a new record in
+the database when the Save button at the bottom of the screen is
+pressed.</FONT></P>
+<P STYLE="margin-top: 0.02in; margin-bottom: 0.02in"><FONT SIZE=4>If
+you want to start editing a new record, but a row of the data table
+is already highlighted, press the “Enter New” button on the
+bottom of the window. The “Enter New” button provides a way to
+stop editing an existing row and to begin entering a brand new row of
+data.</FONT></P>
+<P STYLE="margin-top: 0.02in; margin-bottom: 0.02in"><BR><BR>
+</P>
+<P STYLE="margin-top: 0.02in; margin-bottom: 0.02in"><BR><BR>
+</P>
+<P STYLE="margin-top: 0.02in; margin-bottom: 0.02in"><A NAME="_GoBack"></A>
+<FONT COLOR="#800000"><FONT SIZE=4><B>Deleting Data</B></FONT></FONT></P>
+<P STYLE="margin-top: 0.02in; margin-bottom: 0.02in"><FONT SIZE=4>To
+delete a row of data, highlight it with the mouse and press the
+delete button at the bottom of the window.</FONT></P>
+<P STYLE="margin-top: 0.02in; margin-bottom: 0.02in"><FONT COLOR="#800000"><FONT SIZE=4><B>Print
+List</B></FONT></FONT></P>
+<P STYLE="margin-top: 0.02in; margin-bottom: 0.02in"><FONT SIZE=4>The
+print list button provides a quick way to send the current contents
+of the table to a printer. This data will NOT be formatted in an
+optimal way and is not a substitute for the reports. It simply
+provides a quick way to print the currently shown table.</FONT></P>
+<P STYLE="margin-top: 0.02in; margin-bottom: 0.17in"><BR><BR>
+</P>
+<P STYLE="margin-bottom: 0in"><BR>
+</P>
+</BODY>
+</HTML>
