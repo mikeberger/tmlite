@@ -71,7 +71,7 @@ public class TicketMenu extends JMenu {
 				if (s == null)
 					return;
 				try {
-					//TicketPrinter.printShow(s.getKey(), TicketPrinter.SOLD);
+					TicketPrinter.printShow(s.getKey(), TicketPrinter.SOLD);
 				} catch (Exception e) {
 					Errmsg.getErrorHandler().errmsg(e);
 				}
@@ -94,7 +94,7 @@ public class TicketMenu extends JMenu {
 				if (s == null)
 					return;
 				try {
-					//TicketPrinter.printShow(s.getKey(), TicketPrinter.UNSOLD);
+					TicketPrinter.printShow(s.getKey(), TicketPrinter.UNSOLD);
 				} catch (Exception e) {
 					Errmsg.getErrorHandler().errmsg(e);
 				}
@@ -117,7 +117,7 @@ public class TicketMenu extends JMenu {
 				if (s == null)
 					return;
 				try {
-					//TicketPrinter.printShow(s.getKey(), TicketPrinter.BLANK);
+					TicketPrinter.printShow(s.getKey(), TicketPrinter.BLANK);
 				} catch (Exception e) {
 					Errmsg.getErrorHandler().errmsg(e);
 				}
@@ -147,7 +147,7 @@ public class TicketMenu extends JMenu {
 						new String[] { "CustomerName", "RowAisle" },
 						new TicketsForShowFilter(s.getKey()));
 				try {
-					//TicketPrinter.printSelectedTickets(tickets);
+					TicketPrinter.printSelectedTickets(tickets);
 				} catch (Exception e) {
 					Errmsg.getErrorHandler().errmsg(e);
 				}
@@ -175,8 +175,8 @@ public class TicketMenu extends JMenu {
 						java.lang.Integer.class }), new String[] { "Row",
 						"Number" }, new AvailableSeatsForShowFilter(s.getKey()));
 				try {
-					//TicketPrinter.printSelectedAvailableTickets(s.getKey(),
-					//		seats);
+					TicketPrinter.printSelectedAvailableTickets(s.getKey(),
+							seats);
 				} catch (Exception e) {
 					Errmsg.getErrorHandler().errmsg(e);
 				}
@@ -199,7 +199,7 @@ public class TicketMenu extends JMenu {
 				if (coll == null)
 					return;
 				try {
-					//TicketPrinter.printByName(coll);
+					TicketPrinter.printByName(coll);
 				} catch (Exception e) {
 					Errmsg.getErrorHandler().errmsg(e);
 				}
@@ -223,7 +223,7 @@ public class TicketMenu extends JMenu {
 				if (s == null)
 					return;
 				try {
-					//TicketPrinter.printBySeatOrTable(s.getKey());
+					TicketPrinter.printBySeatOrTable(s.getKey());
 				} catch (Exception e) {
 					Errmsg.getErrorHandler().errmsg(e);
 				}
@@ -258,7 +258,7 @@ public class TicketMenu extends JMenu {
 				if( custs == null ) return;
 
 				try {
-					//TicketPrinter.printByShowForCust(shows, custs);
+					TicketPrinter.printByShowForCust(shows, custs);
 				} catch (Exception e) {
 					Errmsg.getErrorHandler().errmsg(e);
 				}
