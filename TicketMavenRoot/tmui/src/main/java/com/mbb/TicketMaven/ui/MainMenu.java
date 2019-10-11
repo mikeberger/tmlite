@@ -23,7 +23,6 @@
 package com.mbb.TicketMaven.ui;
 
 import java.io.BufferedReader;
-import java.io.File;
 import java.io.FileInputStream;
 import java.io.InputStream;
 import java.io.InputStreamReader;
@@ -36,7 +35,6 @@ import java.util.zip.ZipInputStream;
 
 import javax.swing.Box;
 import javax.swing.ImageIcon;
-import javax.swing.JFileChooser;
 import javax.swing.JMenu;
 import javax.swing.JMenuBar;
 import javax.swing.JMenuItem;
@@ -66,7 +64,6 @@ import com.mbb.TicketMaven.ui.util.LongRunningModalTask;
 import com.mbb.TicketMaven.ui.util.TableSorter;
 import com.mbb.TicketMaven.util.Errmsg;
 import com.mbb.TicketMaven.util.FileIO;
-import com.mbb.TicketMaven.util.Prefs;
 import com.mbb.TicketMaven.util.Version;
 
 /**

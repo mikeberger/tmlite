@@ -26,8 +26,9 @@ public class TicketPrinter  {
 			ClassLoader cl = ClassLoader.getSystemClassLoader();
 			Class<?> clazz = cl.loadClass("com.mbb.TicketMaven.ui.ticketprint.TicketPrinterPlugin");
 			impl = (ITicketPrinter) clazz.newInstance();
+			return impl;
 		} catch (Exception e) {
-			
+			//e.printStackTrace();
 		}
 		
 		return new DummyPrinter();
