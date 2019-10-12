@@ -61,14 +61,14 @@
 			<plugin>
 				<groupId>org.codehaus.mojo</groupId>
 				<artifactId>license-maven-plugin</artifactId>
-				<version>1.0</version>
+				<version>2.0.0</version>
 				<executions>
 					<execution>
 						<id>third-party</id>
 						<phase>deploy</phase>
 						<goals>
 							<goal>aggregate-add-third-party</goal>
-							<goal>download-licenses</goal>
+							<goal>aggregate-download-licenses</goal>
 						</goals>
 						<configuration />
 					</execution>

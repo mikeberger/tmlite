@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <launchConfiguration type="org.eclipse.m2e.Maven2LaunchConfigurationType">
     <booleanAttribute key="M2_DEBUG_OUTPUT" value="false"/>
-    <stringAttribute key="M2_GOALS" value="clean license:update-project-license license:add-third-party license:download-licenses license:update-file-header"/>
+    <stringAttribute key="M2_GOALS" value="clean license:update-project-license license:aggregate-add-third-party license:aggregate-download-licenses"/>
     <booleanAttribute key="M2_NON_RECURSIVE" value="false"/>
     <booleanAttribute key="M2_OFFLINE" value="false"/>
     <stringAttribute key="M2_PROFILES" value=""/>
     <listAttribute key="M2_PROPERTIES">
         <listEntry value="license.licenseName=gpl_v3"/>
         <listEntry value="license.generateBundle=true"/>
-        <listEntry value="licensesOutputDirectory=../target/lic"/>
+        <listEntry value="licensesOutputDirectory=target/lic"/>
         <listEntry value="license.excludedScopes=test"/>
     </listAttribute>
     <stringAttribute key="M2_RUNTIME" value="EMBEDDED"/>
