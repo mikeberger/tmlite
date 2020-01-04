@@ -38,6 +38,7 @@
 		<module>tmhelp</module>
 		<module>tm_installer</module>
 		<!-- <module>LicToolInstaller</module> -->
+		<module>tmstub</module>
 	</modules>
 	<build>
 		<plugins>

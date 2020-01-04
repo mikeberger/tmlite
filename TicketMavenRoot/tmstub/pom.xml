@@ -1,0 +1,23 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>TicketMaven</groupId>
+		<artifactId>TicketMavenRoot</artifactId>
+		<version>1.5</version>
+	</parent>
+	<artifactId>tmstub</artifactId>
+	<dependencies>
+		<dependency>
+			<groupId>TicketMaven</groupId>
+			<artifactId>tmutil</artifactId>
+			<version>1.5</version>
+		</dependency>
+		<dependency>
+			<groupId>TicketMaven</groupId>
+			<artifactId>tmmodel</artifactId>
+			<version>1.5</version>
+		</dependency>
+	</dependencies>
+</project>
