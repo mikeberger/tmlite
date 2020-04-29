@@ -11,7 +11,7 @@
 	<artifactId>tm_installer</artifactId>
 	<packaging>izpack-jar</packaging>
 
-<profiles>
+	<profiles>
 		<profile>
 			<id>w
 		</id>
@@ -40,7 +40,7 @@
 								<argument>/C</argument>
 								<argument>buildjre.bat</argument>
 								<!-- JAVA_HOME -->
-								<argument>c:\jdk-12</argument>
+								<argument>c:\java\jdk-13</argument>
 							</arguments>
 						</configuration>
 					</plugin>
@@ -49,7 +49,7 @@
 
 		</profile>
 		<profile>
-		<id>l</id>
+			<id>l</id>
 			<activation>
 				<os>
 					<family>!windows</family>
@@ -73,7 +73,7 @@
 							<executable>bash</executable>
 							<arguments>
 								<argument>buildjre.sh</argument>
-								
+
 							</arguments>
 						</configuration>
 					</plugin>
@@ -103,7 +103,7 @@
 						<argument>/C</argument>
 						<argument>buildjre.bat</argument>
 						<!-- JAVA_HOME -->
-						<argument>c:\jdk-12</argument>
+						<argument>c:\java\jdk-13</argument>
 					</arguments>
 				</configuration>
 			</plugin>
@@ -140,14 +140,12 @@
 							<headerType>gui</headerType>
 							<outfile>target/${project.build.finalName}.exe</outfile>
 							<jar>target/${project.build.finalName}.jar</jar>
+							<downloadUrl>none</downloadUrl>
 							<jre>
 								<path>jre</path>
+								<minVersion>13</minVersion>
 								<bundledJre64Bit>true</bundledJre64Bit>
-								<bundledJreAsFallback>false</bundledJreAsFallback>
-								<minVersion>10</minVersion>
-								<maxVersion></maxVersion>
 								<jdkPreference>jdkOnly</jdkPreference>
-								<runtimeBits>64/32</runtimeBits>
 							</jre>
 						</configuration>
 					</execution>
@@ -175,9 +173,7 @@
 								<mkdir dir="target/installer/lib/licenses" />
 								<copy file="../tmui/src/main/resources/resource/tm.jpg"
 									todir="target/installer" />
-								<copy
-									file="LICENSE.txt"
-									todir="target/installer" />
+								<copy file="LICENSE.txt" todir="target/installer" />
 
 								<copy todir="target/installer">
 									<fileset dir="installer" includes="*" />
