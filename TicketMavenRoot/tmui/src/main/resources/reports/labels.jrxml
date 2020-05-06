@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.4.3.final using JasperReports Library version 6.4.3  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="labels" columnCount="2" pageWidth="612" pageHeight="792" whenNoDataType="NoPages" columnWidth="268" columnSpacing="18" leftMargin="35" rightMargin="22" topMargin="36" bottomMargin="30" uuid="873c6596-20ac-407b-8bde-4016c62595f4">
+	<property name="ireport.scriptlethandling" value="0"/>
+	<property name="ireport.encoding" value="UTF-8"/>
+	<import value="net.sf.jasperreports.engine.*"/>
+	<import value="java.util.*"/>
+	<import value="net.sf.jasperreports.engine.data.*"/>
+	<parameter name="showid" class="java.util.List"/>
+	<queryString>
+		<![CDATA[SELECT
+     distinct CUSTOMERS."FIRST_NAME" AS CUSTOMERS_FIRST_NAME,
+     CUSTOMERS."LAST_NAME" AS CUSTOMERS_LAST_NAME,
+     CUSTOMERS."ADDRESS" AS CUSTOMERS_ADDRESS
+FROM
+     CUSTOMERS, tickets
+WHERE
+     $X{IN, tickets.show_id, showid} AND customers.record_id = tickets.customer_id
+ORDER BY 
+	customers.last_name]]>
+	</queryString>
+	<field name="CUSTOMERS_FIRST_NAME" class="java.lang.String"/>
+	<field name="CUSTOMERS_LAST_NAME" class="java.lang.String"/>
+	<field name="CUSTOMERS_ADDRESS" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band splitType="Stretch"/>
+	</title>
+	<pageHeader>
+		<band splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band splitType="Stretch"/>
+	</columnHeader>
+	<detail>
+		<band height="72" splitType="Stretch">
+			<textField pattern="" isBlankWhenNull="false">
+				<reportElement key="textField" x="9" y="17" width="259" height="17" forecolor="#000000" backcolor="#FFFFFF" uuid="e9d5d73d-cb7c-40d7-9b23-a368eaf38742"/>
+				<box>
+					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Left" verticalAlignment="Top" rotation="None">
+					<font size="10" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false" pdfEncoding="CP1252" isPdfEmbedded="false"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{CUSTOMERS_FIRST_NAME} + "  " + $F{CUSTOMERS_LAST_NAME}]]></textFieldExpression>
+			</textField>
+			<textField pattern="" isBlankWhenNull="false">
+				<reportElement key="textField" x="9" y="34" width="259" height="17" forecolor="#000000" backcolor="#FFFFFF" uuid="4ba54fd1-5a34-4e02-ae33-88fdcdf6d267"/>
+				<box>
+					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Left" verticalAlignment="Top" rotation="None">
+					<font size="10" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false" pdfEncoding="CP1252" isPdfEmbedded="false"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{CUSTOMERS_ADDRESS}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="1" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band splitType="Stretch"/>
+	</summary>
+</jasperReport>
