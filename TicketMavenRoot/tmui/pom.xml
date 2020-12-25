@@ -170,36 +170,7 @@
 					</execution>
 				</executions>
 			</plugin>
-			<plugin>
-				<groupId>com.akathist.maven.plugins.launch4j</groupId>
-				<artifactId>launch4j-maven-plugin</artifactId>
-				<version>${launch4j-version}</version>
-
-				<executions>
-					<execution>
-						<id>l4j-clui</id>
-						<phase>package</phase>
-						<goals>
-							<goal>launch4j</goal>
-						</goals>
-						<configuration>
-							<headerType>gui</headerType>
-							<outfile>target/TicketMaven.exe</outfile>
-							<jar>TicketMaven.jar</jar>
-							<dontWrapJar>true</dontWrapJar>
-							<icon>${project.basedir}/src/main/resources/resource/tm32x32.ico</icon>
-							<downloadUrl>none</downloadUrl>
-							<jre>
-								<path>jre</path>
-								<minVersion>13</minVersion>
-								<bundledJre64Bit>true</bundledJre64Bit>
-								<jdkPreference>jdkOnly</jdkPreference>
-							</jre>
-
-						</configuration>
-					</execution>
-				</executions>
-			</plugin>
+			
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-jar-plugin</artifactId>
