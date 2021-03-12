@@ -6,7 +6,7 @@ that automates the ticketing process used by some private communities with their
 
 The closed source version is no longer for sale. 
 
-see http://mbcsoft.com/joomla30/index.php/ticketmaven
+Download here: https://github.com/mikeberger/tmlite/releases
 
 ### Licensing
 
