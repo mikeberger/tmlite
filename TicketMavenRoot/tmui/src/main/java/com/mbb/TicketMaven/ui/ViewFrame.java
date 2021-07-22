@@ -50,7 +50,7 @@ public abstract class ViewFrame extends javax.swing.JFrame implements
 		Model.Listener {
 	private static final long serialVersionUID = 1L;
 
-	static Image image = Toolkit.getDefaultToolkit().getImage(
+	private static Image image = Toolkit.getDefaultToolkit().getImage(
 			ViewFrame.class.getResource("/resource/tm16.jpg"));
 
 	private PrefName prefName_ = null;

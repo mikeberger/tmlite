@@ -40,7 +40,7 @@ public class IntSelector extends JDialog {
 	private static final long serialVersionUID = 1L;
 
 	/** The selection_. */
-	static Integer selection_ = null;
+	private static Integer selection_ = null;
 	
 	/**
 	 * This method initializes this.

@@ -46,7 +46,7 @@ import com.mbb.TicketMaven.util.Prefs;
  * provides the UI for the system options tab
  *
  */
-public class SystemOptionsPanel extends OptionsPanel {
+class SystemOptionsPanel extends OptionsPanel {
 	static private final Logger log = Logger.getLogger("com.mbb.TicketMaven");
 
 	private static final long serialVersionUID = 1L;

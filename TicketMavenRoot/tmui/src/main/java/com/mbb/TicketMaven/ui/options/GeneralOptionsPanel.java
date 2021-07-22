@@ -40,7 +40,7 @@ import com.mbb.TicketMaven.util.Prefs;
  * provides the UI for the general options tab
  *
  */
-public class GeneralOptionsPanel extends OptionsPanel {
+class GeneralOptionsPanel extends OptionsPanel {
 
 	private static final long serialVersionUID = 1L;
 	private JTextField communityText = new JTextField();

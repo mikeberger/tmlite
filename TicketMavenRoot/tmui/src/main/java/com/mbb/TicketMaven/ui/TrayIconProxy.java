@@ -40,7 +40,7 @@ import com.mbb.TicketMaven.util.Warning;
  * As soon as all customers go to Java 6 - we need to replace this with the built-in JRE support
  * for the system tray as JDIC is inconsistent on non-windows systems.
  */
-public class TrayIconProxy {
+class TrayIconProxy {
 
 	static private TrayIconProxy singleton = null;
 

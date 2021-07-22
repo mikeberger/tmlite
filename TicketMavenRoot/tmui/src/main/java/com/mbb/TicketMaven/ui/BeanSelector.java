@@ -50,7 +50,6 @@ import javax.swing.table.TableModel;
 import com.mbb.TicketMaven.model.KeyedEntityModel;
 import com.mbb.TicketMaven.model.entity.KeyedEntity;
 import com.mbb.TicketMaven.model.filter.KeyedEntityFilter;
-import com.mbb.TicketMaven.ui.util.StripedTable;
 import com.mbb.TicketMaven.ui.util.TableSorter;
 import com.mbb.TicketMaven.util.Errmsg;
 import com.mbb.TicketMaven.util.PrefName;
@@ -332,7 +331,7 @@ public class BeanSelector<T extends KeyedEntity> extends JDialog implements KeyL
 		gridBagConstraints.gridy = 1; // Generated
 		this.getContentPane().setLayout(new GridBagLayout()); // Generated
 
-		jTable1 = new StripedTable();
+		jTable1 = new JTable();
 		jPanel1 = new javax.swing.JPanel();
 		selectButton = new javax.swing.JButton();
 

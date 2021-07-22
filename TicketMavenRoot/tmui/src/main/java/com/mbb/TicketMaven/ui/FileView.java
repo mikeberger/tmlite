@@ -66,14 +66,14 @@ import com.mbb.TicketMaven.util.PrefName;
 /**
  * dockable view that shows information from a file
  */
-public class FileView extends ViewFrame {
+class FileView extends ViewFrame {
 
 	private static final long serialVersionUID = 1L;
 	private JEditorPane jEditorPane;
 	private JScrollPane jScrollPane1;
 	private JPanel panel;
 
-	static public final PrefName FILEVIEWSIZE = new PrefName("fileviewsize",
+	static private final PrefName FILEVIEWSIZE = new PrefName("fileviewsize",
 			"-1,-1,-1,-1,N");
 
 	private String file_;

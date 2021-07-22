@@ -48,7 +48,7 @@ import com.mbb.TicketMaven.util.Prefs;
  * provides the UI for the Database options tab
  *
  */
-public class DatabaseOptionsPanel extends OptionsPanel {
+class DatabaseOptionsPanel extends OptionsPanel {
 
 	private static final long serialVersionUID = 1L;
 

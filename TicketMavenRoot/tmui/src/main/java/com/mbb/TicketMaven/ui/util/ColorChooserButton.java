@@ -35,12 +35,12 @@ import javax.swing.JColorChooser;
 public class ColorChooserButton extends JButton {
 	private static final long serialVersionUID = 1L;
 	/** The color property - can be foreground or background */
-	protected Color colorProperty;
+	private Color colorProperty;
 	/**
 	 * bg=true means "choosed color is background color" bg=false means
 	 * "choosed color is foreground color"
 	 */
-	protected boolean bg;
+	private boolean bg;
 
 	/**
 	 * Instantiates a new color chooser button.

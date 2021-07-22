@@ -46,7 +46,7 @@ import com.mbb.TicketMaven.util.Errmsg;
  * Class SqlRunner opens a dialog that allows the suer to enter ans run SQL. If the SQL results in 
  * a ResultSet its rows are displayed in a Tabular format
  */
-public class SqlRunner extends JDialog {
+class SqlRunner extends JDialog {
 	
 	private static final long serialVersionUID = 1L;
 

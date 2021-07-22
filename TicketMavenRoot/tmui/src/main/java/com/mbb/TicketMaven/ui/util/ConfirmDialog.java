@@ -50,7 +50,7 @@ public class ConfirmDialog extends JDialog {
 	public final static int OK = 0;
 	
 	/** The Constant CANCEL. */
-	public final static int CANCEL = 1;
+	private final static int CANCEL = 1;
 	
 
     /**

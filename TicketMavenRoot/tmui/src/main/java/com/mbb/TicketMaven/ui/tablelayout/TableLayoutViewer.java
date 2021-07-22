@@ -236,7 +236,7 @@ public class TableLayoutViewer extends ViewPanel {
 
 	private Show show_ = null;
 
-	TableShowFilterPanel tf_ = null;
+	private TableShowFilterPanel tf_ = null;
 
 	// Construct an Editor Panel
 	public TableLayoutViewer() {

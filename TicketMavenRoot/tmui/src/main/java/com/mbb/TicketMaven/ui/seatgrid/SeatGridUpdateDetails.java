@@ -38,7 +38,7 @@ import com.mbb.TicketMaven.model.entity.Zone;
 import com.mbb.TicketMaven.ui.util.LimitDocument;
 import com.mbb.TicketMaven.util.Errmsg;
 
-public class SeatGridUpdateDetails extends JPanel {
+class SeatGridUpdateDetails extends JPanel {
 
 	private static final long serialVersionUID = 1L;
 	private JComboBox<Object> weightBox = null;
@@ -47,7 +47,7 @@ public class SeatGridUpdateDetails extends JPanel {
 	private JComboBox<String> zoneBox = null;
 	private JTextField numberText = null;
 
-	public final static String NO_CHANGE = "No Change";
+	final static String NO_CHANGE = "No Change";
 
 	public SeatGridUpdateDetails() {
 		super();

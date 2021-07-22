@@ -55,7 +55,7 @@ import com.mbb.TicketMaven.util.PrefName;
 import com.mbb.TicketMaven.util.Prefs;
 import com.mbb.TicketMaven.util.Warning;
 
-public class TicketPanel extends JPanel implements Printable {
+class TicketPanel extends JPanel implements Printable {
 
 	static private final Logger log = Logger.getLogger("com.mbb.TicketMaven");
 

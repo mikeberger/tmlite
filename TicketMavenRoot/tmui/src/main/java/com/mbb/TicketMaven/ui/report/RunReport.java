@@ -36,7 +36,7 @@ import com.mbb.TicketMaven.util.Errmsg;
 /**
  * Class for running Jasper Reports
  */
-public class RunReport {
+class RunReport {
 
 	/**
 	 * Run a Jasper report from an InputStream.

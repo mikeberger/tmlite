@@ -23,13 +23,11 @@
 package com.mbb.TicketMaven.ui;
 
 
-import java.awt.Component;
 import java.awt.event.WindowEvent;
 import java.awt.event.WindowListener;
 import java.util.ArrayList;
 import java.util.List;
 
-import javax.swing.Icon;
 import javax.swing.JTabbedPane;
 import javax.swing.SwingConstants;
 
@@ -42,7 +40,6 @@ import com.mbb.TicketMaven.ui.module.RequestManager;
 import com.mbb.TicketMaven.ui.module.Reservations;
 import com.mbb.TicketMaven.ui.module.ShowManager;
 import com.mbb.TicketMaven.ui.module.TheaterLayout;
-import com.mbb.TicketMaven.ui.util.MemoryPanel;
 import com.mbb.TicketMaven.util.PrefName;
 import com.mbb.TicketMaven.util.Prefs;
 import com.mbb.TicketMaven.util.Version;
@@ -199,28 +196,7 @@ public class MainView extends ViewFrame implements Prefs.Listener {
 			 */
 			addModule( new LotteryPanel());
 			
-			if( Prefs.getIntPref(PrefName.MEMBAR_TIMEOUT) > 0)
-			{
-				final class MemModule implements Module {
-
-					@Override
-					public String getModuleName() {
-						return "Memory Info";
-					}
-
-					@Override
-					public Component getComponent() {
-						return new MemoryPanel();
-					}
-
-					@Override
-					public Icon getIcon() {
-						return null;
-					}
-					
-				}
-				addModule( new MemModule());
-			}
+			
 
 		}
 		return jTabbedPane;

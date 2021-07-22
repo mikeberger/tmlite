@@ -35,6 +35,8 @@ import javax.swing.SwingUtilities;
 import javax.swing.UIManager;
 import javax.swing.UIManager.LookAndFeelInfo;
 
+import com.formdev.flatlaf.intellijthemes.FlatAllIJThemes;
+import com.formdev.flatlaf.intellijthemes.FlatAllIJThemes.FlatIJLookAndFeelInfo;
 import com.mbb.TicketMaven.ui.MainView;
 import com.mbb.TicketMaven.ui.options.OptionsView.OptionsPanel;
 import com.mbb.TicketMaven.ui.util.FontChooser;
@@ -47,7 +49,7 @@ import com.mbb.TicketMaven.util.Prefs;
  * UI for the appearance options tab
  *
  */
-public class AppearanceOptionsPanel extends OptionsPanel {
+class AppearanceOptionsPanel extends OptionsPanel {
 
 	private static final long serialVersionUID = 1L;
 
@@ -167,6 +169,12 @@ public class AppearanceOptionsPanel extends OptionsPanel {
 		} catch (Exception e) {
 			// empty
 		}
+		
+		for( FlatIJLookAndFeelInfo ijInfo : FlatAllIJThemes.INFOS )
+		{
+			lnfs.add(ijInfo.getClassName());
+		}
+
 
 		lnfs.add(curlnf);
 

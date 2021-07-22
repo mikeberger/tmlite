@@ -59,10 +59,10 @@ public class FontChooser extends JDialog {
     private static final long serialVersionUID = 1L;
 
 	/** The style list. */
-    String[] styleList = new String[] { "Plain", "Bold", "Italic" };
+    private String[] styleList = new String[] { "Plain", "Bold", "Italic" };
     
     /** The size list. */
-    String[] sizeList =
+    private String[] sizeList =
     new String[] {
         "3",
         "4",
@@ -93,19 +93,19 @@ public class FontChooser extends JDialog {
         "60" };
         
         /** The Style list. */
-        NwList StyleList;
+        private NwList StyleList;
         
         /** The Font list. */
-        NwList FontList;
+        private NwList FontList;
         
         /** The Size list. */
-        NwList SizeList;
+        private NwList SizeList;
         
         /** The Sample. */
-        static JLabel Sample = new JLabel();
+        private static JLabel Sample = new JLabel();
         
         /** The ob. */
-        boolean ob = false;
+        private boolean ob = false;
         
         /**
          * Instantiates a new font chooser.
@@ -246,16 +246,16 @@ public class FontChooser extends JDialog {
             private static final long serialVersionUID = 1L;
 
 			/** The jl. */
-            JList<String> jl;
+            private JList<String> jl;
             
             /** The sp. */
-            JScrollPane sp;
+            private JScrollPane sp;
             
             /** The jt. */
-            JLabel jt;
+            private JLabel jt;
             
             /** The si. */
-            String si = " ";
+            private String si = " ";
             
             /**
              * Instantiates a new nw list.

@@ -69,7 +69,7 @@ import com.mbb.TicketMaven.util.Version;
 /**
  * The MainMenu class provides the main application menu bar
  */
-public class MainMenu extends JMenuBar {
+class MainMenu extends JMenuBar {
 
 	private static final long serialVersionUID = 1L;
 

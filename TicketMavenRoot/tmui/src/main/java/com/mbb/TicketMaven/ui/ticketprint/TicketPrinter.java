@@ -7,7 +7,7 @@ import com.mbb.TicketMaven.model.entity.Seat;
 import com.mbb.TicketMaven.model.entity.Show;
 import com.mbb.TicketMaven.model.entity.Ticket;
 
-public class TicketPrinter  {
+class TicketPrinter  {
 
 	public static final int BLANK = 3;
 

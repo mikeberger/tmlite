@@ -56,7 +56,6 @@ import com.mbb.TicketMaven.ui.ViewPanel;
 import com.mbb.TicketMaven.ui.detail.ViewDetailPanel;
 import com.mbb.TicketMaven.ui.filter.FilterPanel;
 import com.mbb.TicketMaven.ui.util.GridBagConstraintsFactory;
-import com.mbb.TicketMaven.ui.util.StripedTable;
 import com.mbb.TicketMaven.ui.util.TablePrinter;
 import com.mbb.TicketMaven.ui.util.TableSorter;
 import com.mbb.TicketMaven.util.Errmsg;
@@ -73,7 +72,7 @@ import com.mbb.TicketMaven.util.Warning;
  * Save, etc.... By constructing the ViewListPanel with different arguments, you
  * can set up a wide variety of UIs to manage Entitys.
  */
-public class ViewListPanel<T extends KeyedEntity> extends ViewPanel {
+class ViewListPanel<T extends KeyedEntity> extends ViewPanel {
 
 	/**
 	 * A custom TableCellRendererso our Date/Time cells format nicely
@@ -166,7 +165,7 @@ public class ViewListPanel<T extends KeyedEntity> extends ViewPanel {
 	private javax.swing.JButton savebutton;
 
 
-	JSplitPane splitPane = null;
+	private JSplitPane splitPane = null;
 
 	/**
 	 * Instantiates a new view list panel.
@@ -607,7 +606,7 @@ public class ViewListPanel<T extends KeyedEntity> extends ViewPanel {
 
 		this.setLayout(new GridBagLayout());
 
-		jTable1 = new StripedTable();
+		jTable1 = new JTable();
 
 		jTable1.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(
 				0, 0, 0)));

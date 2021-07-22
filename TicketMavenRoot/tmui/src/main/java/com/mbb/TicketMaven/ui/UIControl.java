@@ -55,7 +55,7 @@ import com.mbb.TicketMaven.util.Warning;
  *
  *
  */
-public class UIControl {
+class UIControl {
 
 	private static Observer shutdownListener = null;
 

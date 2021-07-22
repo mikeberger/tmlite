@@ -27,7 +27,7 @@ package com.mbb.TicketMaven.ui;
  * maximized it contains methods to convert this data to and from a String - to
  * be used as a preference string
  */
-public class ViewSize {
+class ViewSize {
 
 	private int x = -1;
 	private int y = -1;

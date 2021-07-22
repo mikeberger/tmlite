@@ -30,7 +30,7 @@ import javax.help.HelpSet;
 /**
  * This class launches the online help. The JavaHelp system is used (javax.help)
  */
-public class HelpProxy {
+class HelpProxy {
 
 	/**
 	 * Launch help.

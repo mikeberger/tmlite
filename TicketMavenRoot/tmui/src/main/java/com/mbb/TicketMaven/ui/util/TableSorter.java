@@ -64,7 +64,7 @@ public class TableSorter extends AbstractTableModel {
     private static final long serialVersionUID = 1L;
 
 	/** The table model. */
-    protected TableModel tableModel;
+    private TableModel tableModel;
 
     private static final int DESCENDING = -1;
     private static final int NOT_SORTED = 0;
@@ -73,7 +73,7 @@ public class TableSorter extends AbstractTableModel {
     private static Directive EMPTY_DIRECTIVE = new Directive(-1, NOT_SORTED);
 
 	/** The Constant COMPARABLE_COMAPRATOR. */
-	public static final Comparator<Object> COMPARABLE_COMAPRATOR = new Comparator<Object>() {
+	private static final Comparator<Object> COMPARABLE_COMAPRATOR = new Comparator<Object>() {
         @Override
 		public int compare(Object o1, Object o2) {
             return ((Comparable<Object>) o1).compareTo(o2);
@@ -81,7 +81,7 @@ public class TableSorter extends AbstractTableModel {
     };
     
     /** The Constant LEXICAL_COMPARATOR. */
-    public static final Comparator<Object> LEXICAL_COMPARATOR = new Comparator<Object>() {
+    private static final Comparator<Object> LEXICAL_COMPARATOR = new Comparator<Object>() {
         @Override
 		public int compare(Object o1, Object o2) {
             return o1.toString().compareTo(o2.toString());

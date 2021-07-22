@@ -178,7 +178,4 @@ public class PrefName {
 	
 	public static PrefName ALLOWLAYOUTEDIT = new PrefName("allowLayoutEdit", "false");
 	
-	public static PrefName MEMBAR_TIMEOUT = new PrefName("membrar-timeout", -1);
-	public static PrefName SERVER = new PrefName("server", "");
-
 }

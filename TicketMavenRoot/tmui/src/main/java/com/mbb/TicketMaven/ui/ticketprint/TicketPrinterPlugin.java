@@ -35,7 +35,7 @@ import com.mbb.TicketMaven.util.Errmsg;
 import com.mbb.TicketMaven.util.Warning;
 
 
-public class TicketPrinterPlugin  {
+class TicketPrinterPlugin  {
 
 
 	public static final int BLANK = 3;
