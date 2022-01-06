@@ -1,1 +1,1 @@
-c:\java\jdk-15.0.1\bin\jpackage -t msi --app-version 1.5.1 -n TicketMaven --vendor MBCSoft -i target\installer --main-class com.mbb.TicketMaven.ui.TicketMaven --main-jar TicketMaven.jar --win-dir-chooser --win-menu --win-menu-group TicketMaven --win-shortcut
+c:\java\jdk-17.0.1\bin\jpackage -t msi --app-version 1.5.1 -n TicketMaven --vendor MBCSoft -i target\installer --main-class com.mbb.TicketMaven.ui.TicketMaven --main-jar TicketMaven.jar --win-dir-chooser --win-menu --win-menu-group TicketMaven --win-shortcut
