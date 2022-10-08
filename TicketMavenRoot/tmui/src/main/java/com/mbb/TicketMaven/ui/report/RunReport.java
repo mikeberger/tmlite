@@ -22,16 +22,15 @@
 
 package com.mbb.TicketMaven.ui.report;
 
-import java.io.InputStream;
-import java.sql.Connection;
-import java.util.Map;
-
+import com.mbb.TicketMaven.model.jdbc.JdbcDB;
+import com.mbb.TicketMaven.util.Errmsg;
 import net.sf.jasperreports.engine.JasperFillManager;
 import net.sf.jasperreports.engine.JasperPrint;
 import net.sf.jasperreports.view.JasperViewer;
 
-import com.mbb.TicketMaven.model.jdbc.JdbcDB;
-import com.mbb.TicketMaven.util.Errmsg;
+import java.io.InputStream;
+import java.sql.Connection;
+import java.util.Map;
 
 /**
  * Class for running Jasper Reports
@@ -77,7 +76,7 @@ class RunReport {
 		InputStream is = RunReport.class.getResourceAsStream(resourcePath);
 		if( is == null )
 		{
-			Errmsg.getErrorHandler().notice("Report not included in Lite version");
+			Errmsg.getErrorHandler().notice("Report not included in this version");
 			return;
 		}
 		runReport(is, parms);

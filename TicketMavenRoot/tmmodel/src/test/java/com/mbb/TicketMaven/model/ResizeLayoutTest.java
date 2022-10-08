@@ -22,19 +22,17 @@
 
 package com.mbb.TicketMaven.model;
 
-import java.util.Collection;
-import java.util.logging.Level;
-import java.util.logging.LogManager;
-
-import org.junit.AfterClass;
-import org.junit.BeforeClass;
-import org.junit.Test;
-
 import com.mbb.TicketMaven.model.entity.Layout;
 import com.mbb.TicketMaven.model.entity.Seat;
 import com.mbb.TicketMaven.model.jdbc.JdbcDB;
-
+import org.junit.AfterClass;
 import org.junit.Assert;
+import org.junit.BeforeClass;
+import org.junit.Test;
+
+import java.util.Collection;
+import java.util.logging.Level;
+import java.util.logging.LogManager;
 
 /**
  * test to see if requests are properly randomized if everyone is equal

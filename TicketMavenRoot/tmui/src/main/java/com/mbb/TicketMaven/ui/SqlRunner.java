@@ -22,25 +22,15 @@
 
 package com.mbb.TicketMaven.ui;
 
-import java.awt.GridBagConstraints;
-import java.awt.GridBagLayout;
-import java.sql.ResultSet;
-
-import javax.swing.JButton;
-import javax.swing.JDialog;
-import javax.swing.JEditorPane;
-import javax.swing.JScrollPane;
-import javax.swing.JTable;
-
-import com.mbb.TicketMaven.model.CustomerModel;
-import com.mbb.TicketMaven.model.SeatModel;
-import com.mbb.TicketMaven.model.ShowModel;
-import com.mbb.TicketMaven.model.TicketModel;
-import com.mbb.TicketMaven.model.TicketRequestModel;
+import com.mbb.TicketMaven.model.*;
 import com.mbb.TicketMaven.model.jdbc.JdbcDB;
 import com.mbb.TicketMaven.ui.util.ScrolledDialog;
 import com.mbb.TicketMaven.ui.util.TableSorter;
 import com.mbb.TicketMaven.util.Errmsg;
+
+import javax.swing.*;
+import java.awt.*;
+import java.sql.ResultSet;
 
 /**
  * Class SqlRunner opens a dialog that allows the suer to enter ans run SQL. If the SQL results in 

@@ -22,15 +22,8 @@
 
 package com.mbb.TicketMaven.ui.util;
 
-import java.awt.Frame;
-import java.awt.GridBagConstraints;
-import java.awt.GridBagLayout;
-
-import javax.swing.JButton;
-import javax.swing.JDialog;
-import javax.swing.JPanel;
-import javax.swing.JSpinner;
-import javax.swing.JTextField;
+import javax.swing.*;
+import java.awt.*;
 
 /**
  * Dialog for letting the user select an Integer value via a Spinner widget

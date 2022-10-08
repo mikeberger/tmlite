@@ -22,17 +22,6 @@
 
 package com.mbb.TicketMaven.ui.module;
 
-import java.awt.Color;
-import java.awt.Component;
-
-import javax.swing.BoxLayout;
-import javax.swing.Icon;
-import javax.swing.ImageIcon;
-import javax.swing.JButton;
-import javax.swing.JPanel;
-import javax.swing.JTabbedPane;
-import javax.swing.JTextArea;
-
 import com.mbb.TicketMaven.model.LayoutModel;
 import com.mbb.TicketMaven.model.ZoneModel;
 import com.mbb.TicketMaven.model.entity.Layout;
@@ -42,6 +31,9 @@ import com.mbb.TicketMaven.ui.detail.ZoneView;
 import com.mbb.TicketMaven.ui.seatgrid.SeatGridEditor;
 import com.mbb.TicketMaven.ui.tablelayout.TableLayoutEditor;
 import com.mbb.TicketMaven.ui.util.TableSorter;
+
+import javax.swing.*;
+import java.awt.*;
 
 /**
  * The Class TheaterLayout provides the UI for managing seating and table layouts and special needs zones

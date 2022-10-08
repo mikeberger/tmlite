@@ -22,8 +22,13 @@
 
 package com.mbb.TicketMaven.ui;
 
-import java.awt.Font;
-import java.awt.Frame;
+import com.mbb.TicketMaven.model.jdbc.DumpJdbcDB;
+import com.mbb.TicketMaven.ui.util.FontChooser;
+import com.mbb.TicketMaven.ui.util.SplashScreen;
+import com.mbb.TicketMaven.util.*;
+
+import javax.swing.*;
+import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.io.FileOutputStream;
@@ -34,20 +39,6 @@ import java.util.Date;
 import java.util.Locale;
 import java.util.zip.ZipEntry;
 import java.util.zip.ZipOutputStream;
-
-import javax.swing.JOptionPane;
-import javax.swing.Timer;
-import javax.swing.ToolTipManager;
-import javax.swing.UIManager;
-
-import com.mbb.TicketMaven.model.jdbc.DumpJdbcDB;
-import com.mbb.TicketMaven.ui.util.FontChooser;
-import com.mbb.TicketMaven.ui.util.SplashScreen;
-import com.mbb.TicketMaven.util.Errmsg;
-import com.mbb.TicketMaven.util.Observer;
-import com.mbb.TicketMaven.util.PrefName;
-import com.mbb.TicketMaven.util.Prefs;
-import com.mbb.TicketMaven.util.Warning;
 
 /**
  * Class UIControl provides access to the UI from non-UI classes. UIControl

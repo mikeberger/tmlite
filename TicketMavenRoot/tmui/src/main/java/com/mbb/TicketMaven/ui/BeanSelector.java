@@ -22,9 +22,21 @@
 
 package com.mbb.TicketMaven.ui;
 
-import java.awt.Component;
-import java.awt.GridBagConstraints;
-import java.awt.GridBagLayout;
+import com.mbb.TicketMaven.model.KeyedEntityModel;
+import com.mbb.TicketMaven.model.entity.KeyedEntity;
+import com.mbb.TicketMaven.model.filter.KeyedEntityFilter;
+import com.mbb.TicketMaven.ui.util.TableSorter;
+import com.mbb.TicketMaven.util.Errmsg;
+import com.mbb.TicketMaven.util.PrefName;
+import com.mbb.TicketMaven.util.Prefs;
+
+import javax.swing.*;
+import javax.swing.border.BevelBorder;
+import javax.swing.border.SoftBevelBorder;
+import javax.swing.event.TableModelEvent;
+import javax.swing.table.TableCellRenderer;
+import javax.swing.table.TableModel;
+import java.awt.*;
 import java.awt.event.KeyEvent;
 import java.awt.event.KeyListener;
 import java.lang.reflect.Method;
@@ -33,27 +45,6 @@ import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Date;
 import java.util.Iterator;
-
-import javax.swing.DefaultListSelectionModel;
-import javax.swing.JButton;
-import javax.swing.JDialog;
-import javax.swing.JLabel;
-import javax.swing.JScrollPane;
-import javax.swing.JTable;
-import javax.swing.ListSelectionModel;
-import javax.swing.border.BevelBorder;
-import javax.swing.border.SoftBevelBorder;
-import javax.swing.event.TableModelEvent;
-import javax.swing.table.TableCellRenderer;
-import javax.swing.table.TableModel;
-
-import com.mbb.TicketMaven.model.KeyedEntityModel;
-import com.mbb.TicketMaven.model.entity.KeyedEntity;
-import com.mbb.TicketMaven.model.filter.KeyedEntityFilter;
-import com.mbb.TicketMaven.ui.util.TableSorter;
-import com.mbb.TicketMaven.util.Errmsg;
-import com.mbb.TicketMaven.util.PrefName;
-import com.mbb.TicketMaven.util.Prefs;
 
 /**
  * A BeanSelector is a generic UI that shows a modal dialog with a table of

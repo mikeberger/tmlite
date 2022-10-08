@@ -22,13 +22,13 @@
 
 package com.mbb.TicketMaven.model.filter;
 
-import java.util.ArrayList;
-import java.util.Collection;
-
 import com.mbb.TicketMaven.model.TableModel;
 import com.mbb.TicketMaven.model.entity.KeyedEntity;
 import com.mbb.TicketMaven.model.entity.Table;
 import com.mbb.TicketMaven.util.Errmsg;
+
+import java.util.ArrayList;
+import java.util.Collection;
 
 /** filters Tables for a given Layout */
 public class TableFilter implements KeyedEntityFilter<Table> {

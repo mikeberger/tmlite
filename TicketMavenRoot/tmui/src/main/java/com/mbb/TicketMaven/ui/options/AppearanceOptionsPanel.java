@@ -22,19 +22,6 @@
 
 package com.mbb.TicketMaven.ui.options;
 
-import java.awt.Font;
-import java.awt.GridBagConstraints;
-import java.awt.GridBagLayout;
-import java.util.TreeSet;
-
-import javax.swing.JButton;
-import javax.swing.JComboBox;
-import javax.swing.JLabel;
-import javax.swing.JTextField;
-import javax.swing.SwingUtilities;
-import javax.swing.UIManager;
-import javax.swing.UIManager.LookAndFeelInfo;
-
 import com.formdev.flatlaf.intellijthemes.FlatAllIJThemes;
 import com.formdev.flatlaf.intellijthemes.FlatAllIJThemes.FlatIJLookAndFeelInfo;
 import com.mbb.TicketMaven.ui.MainView;
@@ -44,6 +31,11 @@ import com.mbb.TicketMaven.ui.util.GridBagConstraintsFactory;
 import com.mbb.TicketMaven.util.Errmsg;
 import com.mbb.TicketMaven.util.PrefName;
 import com.mbb.TicketMaven.util.Prefs;
+
+import javax.swing.*;
+import javax.swing.UIManager.LookAndFeelInfo;
+import java.awt.*;
+import java.util.TreeSet;
 
 /**
  * UI for the appearance options tab

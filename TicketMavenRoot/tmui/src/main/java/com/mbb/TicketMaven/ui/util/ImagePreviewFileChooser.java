@@ -21,12 +21,13 @@
  */
 package com.mbb.TicketMaven.ui.util;
 
+import javax.imageio.ImageIO;
+import javax.swing.*;
 import java.awt.*;
 import java.beans.PropertyChangeEvent;
 import java.beans.PropertyChangeListener;
-import java.io.*;
-import javax.imageio.ImageIO;
-import javax.swing.*;
+import java.io.File;
+import java.io.IOException;
 
 public class ImagePreviewFileChooser extends JPanel implements
 		PropertyChangeListener {

@@ -22,13 +22,13 @@
 
 package com.mbb.TicketMaven.model.jdbc;
 
+import com.mbb.TicketMaven.model.entity.Reservation;
+
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.Collection;
-
-import com.mbb.TicketMaven.model.entity.Reservation;
 
 /**
  * JDBC layer for Reservation Entitys

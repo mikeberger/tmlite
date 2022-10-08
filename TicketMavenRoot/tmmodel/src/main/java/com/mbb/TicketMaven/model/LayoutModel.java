@@ -22,10 +22,6 @@
 package com.mbb.TicketMaven.model;
 
 
-
-import java.sql.SQLException;
-import java.util.Collection;
-
 import com.mbb.TicketMaven.model.entity.Layout;
 import com.mbb.TicketMaven.model.entity.Seat;
 import com.mbb.TicketMaven.model.entity.Show;
@@ -34,6 +30,9 @@ import com.mbb.TicketMaven.model.jdbc.JdbcDB;
 import com.mbb.TicketMaven.model.jdbc.LayoutJdbcDB;
 import com.mbb.TicketMaven.util.Errmsg;
 import com.mbb.TicketMaven.util.Warning;
+
+import java.sql.SQLException;
+import java.util.Collection;
 
 /**
  * The Layout Model.

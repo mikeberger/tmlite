@@ -22,9 +22,9 @@
 
 package com.mbb.TicketMaven.model.filter;
 
-import java.util.Collection;
-
 import com.mbb.TicketMaven.model.entity.KeyedEntity;
+
+import java.util.Collection;
 
 /**
  * a KeyedEntityFilter returns beans of a certain type, filtered by some criteria. A

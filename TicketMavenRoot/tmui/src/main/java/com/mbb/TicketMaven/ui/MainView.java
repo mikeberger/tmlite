@@ -23,26 +23,17 @@
 package com.mbb.TicketMaven.ui;
 
 
+import com.mbb.TicketMaven.ui.module.Module;
+import com.mbb.TicketMaven.ui.module.*;
+import com.mbb.TicketMaven.util.PrefName;
+import com.mbb.TicketMaven.util.Prefs;
+import com.mbb.TicketMaven.util.Version;
+
+import javax.swing.*;
 import java.awt.event.WindowEvent;
 import java.awt.event.WindowListener;
 import java.util.ArrayList;
 import java.util.List;
-
-import javax.swing.JTabbedPane;
-import javax.swing.SwingConstants;
-
-import com.mbb.TicketMaven.ui.module.AssignedTickets;
-import com.mbb.TicketMaven.ui.module.CustomerManager;
-import com.mbb.TicketMaven.ui.module.LotteryPanel;
-import com.mbb.TicketMaven.ui.module.Module;
-import com.mbb.TicketMaven.ui.module.PackageManager;
-import com.mbb.TicketMaven.ui.module.RequestManager;
-import com.mbb.TicketMaven.ui.module.Reservations;
-import com.mbb.TicketMaven.ui.module.ShowManager;
-import com.mbb.TicketMaven.ui.module.TheaterLayout;
-import com.mbb.TicketMaven.util.PrefName;
-import com.mbb.TicketMaven.util.Prefs;
-import com.mbb.TicketMaven.util.Version;
 
 /**
  * MainView is the Main TicketMaven Window
@@ -203,7 +194,7 @@ public class MainView extends ViewFrame implements Prefs.Listener {
 	}
 
 	private void initialize() {
-		this.setTitle("Ticket Maven (Lite)" + Version.getVersion()); 
+		this.setTitle("Ticket Maven " + Version.getVersion());
 		this.setSize(new java.awt.Dimension(524, 475));
 
 		this.setContentPane(getJTabbedPane()); 

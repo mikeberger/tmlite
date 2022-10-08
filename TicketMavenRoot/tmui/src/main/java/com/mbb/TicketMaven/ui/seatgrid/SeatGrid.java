@@ -22,42 +22,24 @@
 
 package com.mbb.TicketMaven.ui.seatgrid;
 
-import java.awt.BorderLayout;
-import java.awt.Color;
-import java.awt.Dimension;
-import java.awt.Font;
-import java.awt.Graphics;
-import java.awt.Graphics2D;
-import java.awt.Shape;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
-import java.awt.print.PageFormat;
-import java.awt.print.Paper;
-import java.awt.print.Printable;
-import java.awt.print.PrinterException;
-import java.awt.print.PrinterJob;
-import java.lang.reflect.InvocationTargetException;
-import java.lang.reflect.Method;
-import java.util.Collection;
-import java.util.Iterator;
-
-import javax.swing.JMenu;
-import javax.swing.JMenuBar;
-import javax.swing.JMenuItem;
-import javax.swing.JPanel;
-import javax.swing.border.BevelBorder;
-
-import com.mbb.TicketMaven.model.CustomerModel;
-import com.mbb.TicketMaven.model.LayoutModel;
-import com.mbb.TicketMaven.model.SeatModel;
-import com.mbb.TicketMaven.model.ShowModel;
-import com.mbb.TicketMaven.model.TicketModel;
+import com.mbb.TicketMaven.model.*;
 import com.mbb.TicketMaven.model.entity.Seat;
 import com.mbb.TicketMaven.model.entity.Show;
 import com.mbb.TicketMaven.model.entity.Ticket;
 import com.mbb.TicketMaven.ui.ViewFrame;
 import com.mbb.TicketMaven.util.Errmsg;
 import com.mbb.TicketMaven.util.PrefName;
+
+import javax.swing.*;
+import javax.swing.border.BevelBorder;
+import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.awt.print.*;
+import java.lang.reflect.InvocationTargetException;
+import java.lang.reflect.Method;
+import java.util.Collection;
+import java.util.Iterator;
 
 public class SeatGrid extends ViewFrame {
 

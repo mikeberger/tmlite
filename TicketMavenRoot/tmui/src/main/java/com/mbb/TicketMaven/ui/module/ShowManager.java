@@ -22,11 +22,6 @@
 
 package com.mbb.TicketMaven.ui.module;
 
-import java.awt.Component;
-
-import javax.swing.Icon;
-import javax.swing.ImageIcon;
-
 import com.mbb.TicketMaven.model.LayoutModel;
 import com.mbb.TicketMaven.model.ShowModel;
 import com.mbb.TicketMaven.model.TicketModel;
@@ -35,6 +30,9 @@ import com.mbb.TicketMaven.ui.detail.ShowView;
 import com.mbb.TicketMaven.ui.filter.ShowFilterPanel;
 import com.mbb.TicketMaven.ui.util.TableSorter;
 import com.mbb.TicketMaven.util.Money;
+
+import javax.swing.*;
+import java.awt.*;
 
 /**
  * The Class ShowManager provides the UI for managing shows

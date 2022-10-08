@@ -22,11 +22,11 @@
 
 package com.mbb.TicketMaven.model.filter;
 
-import java.util.Collection;
-
 import com.mbb.TicketMaven.model.TicketModel;
 import com.mbb.TicketMaven.model.entity.Ticket;
 import com.mbb.TicketMaven.util.Errmsg;
+
+import java.util.Collection;
 
 /**  filters tickets for a given show */
 public class TicketsForShowFilter implements KeyedEntityFilter<Ticket> {

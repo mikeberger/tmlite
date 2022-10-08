@@ -22,10 +22,9 @@
 
 package com.mbb.TicketMaven.ui;
 
-import java.net.URL;
-
 import javax.help.HelpBroker;
 import javax.help.HelpSet;
+import java.net.URL;
 
 /**
  * This class launches the online help. The JavaHelp system is used (javax.help)

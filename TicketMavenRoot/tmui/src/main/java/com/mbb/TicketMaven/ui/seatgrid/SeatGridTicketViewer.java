@@ -22,16 +22,6 @@
 
 package com.mbb.TicketMaven.ui.seatgrid;
 
-import java.awt.GridBagConstraints;
-import java.awt.GridBagLayout;
-import java.awt.Insets;
-
-import javax.swing.ImageIcon;
-import javax.swing.JButton;
-import javax.swing.JPanel;
-import javax.swing.JScrollPane;
-import javax.swing.JTextField;
-
 import com.mbb.TicketMaven.model.LayoutModel;
 import com.mbb.TicketMaven.model.SeatModel;
 import com.mbb.TicketMaven.model.ShowModel;
@@ -40,6 +30,9 @@ import com.mbb.TicketMaven.ui.BeanSelector;
 import com.mbb.TicketMaven.ui.ViewPanel;
 import com.mbb.TicketMaven.ui.util.ComponentPrinter;
 import com.mbb.TicketMaven.ui.util.TableSorter;
+
+import javax.swing.*;
+import java.awt.*;
 
 public class SeatGridTicketViewer extends ViewPanel {
 

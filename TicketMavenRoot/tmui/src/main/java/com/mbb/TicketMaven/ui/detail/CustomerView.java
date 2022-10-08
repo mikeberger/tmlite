@@ -22,18 +22,6 @@
 
 package com.mbb.TicketMaven.ui.detail;
 
-import java.awt.GridBagConstraints;
-import java.awt.GridBagLayout;
-import java.util.Collection;
-
-import javax.swing.JCheckBox;
-import javax.swing.JComboBox;
-import javax.swing.JLabel;
-import javax.swing.JPanel;
-import javax.swing.JSpinner;
-import javax.swing.JTabbedPane;
-import javax.swing.JTextField;
-
 import com.mbb.TicketMaven.model.CustomerModel;
 import com.mbb.TicketMaven.model.ZoneModel;
 import com.mbb.TicketMaven.model.entity.Customer;
@@ -42,6 +30,10 @@ import com.mbb.TicketMaven.ui.util.GridBagConstraintsFactory;
 import com.mbb.TicketMaven.ui.util.LimitDocument;
 import com.mbb.TicketMaven.util.Errmsg;
 import com.mbb.TicketMaven.util.Warning;
+
+import javax.swing.*;
+import java.awt.*;
+import java.util.Collection;
 
 public class CustomerView extends ViewDetailPanel<Customer> {
 

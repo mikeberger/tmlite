@@ -22,12 +22,12 @@
 
 package com.mbb.TicketMaven.model;
 
+import com.mbb.TicketMaven.model.entity.Customer;
+import com.mbb.TicketMaven.model.jdbc.JdbcDB;
+
 import java.util.Collection;
 import java.util.logging.Level;
 import java.util.logging.LogManager;
-
-import com.mbb.TicketMaven.model.entity.Customer;
-import com.mbb.TicketMaven.model.jdbc.JdbcDB;
 
 
 public class NameFixer {

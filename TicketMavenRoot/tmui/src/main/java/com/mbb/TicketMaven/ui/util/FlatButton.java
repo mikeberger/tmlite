@@ -22,15 +22,13 @@
 
 package com.mbb.TicketMaven.ui.util;
 
-import java.awt.Color;
+import javax.swing.*;
+import javax.swing.border.Border;
+import java.awt.*;
 import java.awt.event.FocusEvent;
 import java.awt.event.FocusListener;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
-
-import javax.swing.BorderFactory;
-import javax.swing.JToggleButton;
-import javax.swing.border.Border;
 
 /**
  * a flat toggle button with a border highlight on mouse-over

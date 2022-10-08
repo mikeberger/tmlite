@@ -22,26 +22,15 @@
 package com.mbb.TicketMaven.model;
 
 
-import java.sql.SQLException;
-import java.util.ArrayList;
-import java.util.Collection;
-import java.util.Comparator;
-import java.util.HashMap;
-import java.util.Iterator;
-import java.util.Random;
-import java.util.TreeSet;
-import java.util.logging.Level;
-import java.util.logging.Logger;
-
-import com.mbb.TicketMaven.model.entity.Customer;
-import com.mbb.TicketMaven.model.entity.Seat;
-import com.mbb.TicketMaven.model.entity.Show;
-import com.mbb.TicketMaven.model.entity.Ticket;
-import com.mbb.TicketMaven.model.entity.TicketRequest;
-import com.mbb.TicketMaven.model.entity.Zone;
+import com.mbb.TicketMaven.model.entity.*;
 import com.mbb.TicketMaven.model.jdbc.JdbcDB;
 import com.mbb.TicketMaven.util.PrefName;
 import com.mbb.TicketMaven.util.Prefs;
+
+import java.sql.SQLException;
+import java.util.*;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 /**
  * This class runs the actual lotteries

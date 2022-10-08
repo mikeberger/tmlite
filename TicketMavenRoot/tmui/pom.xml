@@ -43,6 +43,7 @@
 		<dependency>
 			<groupId>net.sf.jasperreports</groupId>
 			<artifactId>jasperreports</artifactId>
+			<version>6.20.0</version>
 			<exclusions>
 				<exclusion>
 					<groupId>xml-apis</groupId>
@@ -114,14 +115,10 @@
 				</exclusion>
 			</exclusions>
 		</dependency>
-		<!-- <dependency> -->
-		<!-- <groupId>TicketMaven</groupId> -->
-		<!-- <artifactId>tmlicense</artifactId> -->
-		<!-- <version>1.5</version> -->
-		<!-- </dependency> -->
 		<dependency>
 			<groupId>org.hsqldb</groupId>
 			<artifactId>hsqldb</artifactId>
+			<version>2.7.0</version>
 			<scope>runtime</scope>
 		</dependency>
 		<dependency>
@@ -132,12 +129,12 @@
 			<dependency>
 			<groupId>com.formdev</groupId>
 			<artifactId>flatlaf</artifactId>
-			<version>1.4</version>
+			<version>2.5</version>
 		</dependency>
 		<dependency>
 			<groupId>com.formdev</groupId>
 			<artifactId>flatlaf-intellij-themes</artifactId>
-			<version>1.4</version>
+			<version>2.5</version>
 		</dependency>
 		
 		<dependency>

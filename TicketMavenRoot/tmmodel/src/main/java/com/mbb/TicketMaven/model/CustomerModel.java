@@ -22,18 +22,17 @@
 package com.mbb.TicketMaven.model;
 
 
-
-import java.io.IOException;
-import java.io.Reader;
-import java.util.Collection;
-import java.util.logging.Logger;
-
 import com.mbb.TicketMaven.model.entity.Customer;
 import com.mbb.TicketMaven.model.entity.Seat;
 import com.mbb.TicketMaven.model.entity.Ticket;
 import com.mbb.TicketMaven.model.jdbc.CustomerJdbcDB;
 import com.mbb.TicketMaven.model.jdbc.JdbcDB;
 import com.mbb.TicketMaven.util.Errmsg;
+
+import java.io.IOException;
+import java.io.Reader;
+import java.util.Collection;
+import java.util.logging.Logger;
 
 /**
  * The Customer Model.

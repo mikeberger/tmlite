@@ -22,19 +22,13 @@
 
 package com.mbb.TicketMaven.ui.options;
 
-import java.awt.GridBagConstraints;
-import java.awt.GridBagLayout;
-
-import javax.swing.ButtonGroup;
-import javax.swing.JCheckBox;
-import javax.swing.JLabel;
-import javax.swing.JRadioButton;
-import javax.swing.JTextField;
-
 import com.mbb.TicketMaven.ui.options.OptionsView.OptionsPanel;
 import com.mbb.TicketMaven.ui.util.GridBagConstraintsFactory;
 import com.mbb.TicketMaven.util.PrefName;
 import com.mbb.TicketMaven.util.Prefs;
+
+import javax.swing.*;
+import java.awt.*;
 
 /**
  * provides the UI for the general options tab

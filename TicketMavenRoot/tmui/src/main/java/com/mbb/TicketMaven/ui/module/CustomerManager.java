@@ -22,15 +22,13 @@
 
 package com.mbb.TicketMaven.ui.module;
 
-import java.awt.Component;
-
-import javax.swing.Icon;
-import javax.swing.ImageIcon;
-
 import com.mbb.TicketMaven.model.CustomerModel;
 import com.mbb.TicketMaven.model.entity.Customer;
 import com.mbb.TicketMaven.ui.detail.CustomerView;
 import com.mbb.TicketMaven.ui.util.TableSorter;
+
+import javax.swing.*;
+import java.awt.*;
 
 /**
  * The Class CustomerManager provides the customer manager UI

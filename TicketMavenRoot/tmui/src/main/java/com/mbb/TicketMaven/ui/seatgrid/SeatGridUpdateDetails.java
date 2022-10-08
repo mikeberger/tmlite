@@ -22,21 +22,16 @@
 
 package com.mbb.TicketMaven.ui.seatgrid;
 
-import java.awt.GridBagConstraints;
-import java.awt.GridBagLayout;
-import java.util.Collection;
-import java.util.Iterator;
-
-import javax.swing.JComboBox;
-import javax.swing.JLabel;
-import javax.swing.JPanel;
-import javax.swing.JTextField;
-
 import com.mbb.TicketMaven.model.SeatModel;
 import com.mbb.TicketMaven.model.ZoneModel;
 import com.mbb.TicketMaven.model.entity.Zone;
 import com.mbb.TicketMaven.ui.util.LimitDocument;
 import com.mbb.TicketMaven.util.Errmsg;
+
+import javax.swing.*;
+import java.awt.*;
+import java.util.Collection;
+import java.util.Iterator;
 
 class SeatGridUpdateDetails extends JPanel {
 

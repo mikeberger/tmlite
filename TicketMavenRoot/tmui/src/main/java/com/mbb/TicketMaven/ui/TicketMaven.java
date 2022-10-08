@@ -22,38 +22,18 @@
 
 package com.mbb.TicketMaven.ui;
 
-import java.io.BufferedReader;
-import java.io.File;
-import java.io.FileOutputStream;
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.InputStreamReader;
-import java.io.PrintStream;
-import java.sql.SQLException;
-import java.util.Timer;
-import java.util.TimerTask;
-import java.util.logging.ConsoleHandler;
-import java.util.logging.FileHandler;
-import java.util.logging.Level;
-import java.util.logging.Logger;
-import java.util.logging.SimpleFormatter;
-
-import javax.swing.JFileChooser;
-import javax.swing.JOptionPane;
-import javax.swing.SwingUtilities;
-
 import com.mbb.TicketMaven.model.jdbc.JdbcDB;
 import com.mbb.TicketMaven.ui.options.DbChooser;
 import com.mbb.TicketMaven.ui.util.UIErrorHandler;
-import com.mbb.TicketMaven.util.Errmsg;
-import com.mbb.TicketMaven.util.FileIO;
-import com.mbb.TicketMaven.util.Observable;
-import com.mbb.TicketMaven.util.Observer;
-import com.mbb.TicketMaven.util.PrefName;
-import com.mbb.TicketMaven.util.Prefs;
-import com.mbb.TicketMaven.util.SocketClient;
 import com.mbb.TicketMaven.util.SocketHandler;
-import com.mbb.TicketMaven.util.SocketServer;
+import com.mbb.TicketMaven.util.*;
+
+import javax.swing.*;
+import java.io.*;
+import java.sql.SQLException;
+import java.util.Timer;
+import java.util.TimerTask;
+import java.util.logging.*;
 
 /**
  * The Main Application Startup and Shutdown Class. This class initializes the

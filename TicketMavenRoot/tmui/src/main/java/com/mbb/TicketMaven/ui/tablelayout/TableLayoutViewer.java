@@ -22,30 +22,6 @@
 
 package com.mbb.TicketMaven.ui.tablelayout;
 
-import java.awt.Color;
-import java.awt.GridBagConstraints;
-import java.awt.GridBagLayout;
-import java.awt.event.MouseEvent;
-import java.awt.geom.Rectangle2D;
-import java.util.Collection;
-import java.util.Hashtable;
-import java.util.Map;
-
-import javax.swing.ImageIcon;
-import javax.swing.JButton;
-import javax.swing.JPanel;
-import javax.swing.JScrollPane;
-import javax.swing.ToolTipManager;
-
-import org.jgraph.JGraph;
-import org.jgraph.graph.DefaultCellViewFactory;
-import org.jgraph.graph.DefaultGraphCell;
-import org.jgraph.graph.DefaultGraphModel;
-import org.jgraph.graph.GraphConstants;
-import org.jgraph.graph.GraphLayoutCache;
-import org.jgraph.graph.GraphModel;
-import org.jgraph.graph.VertexView;
-
 import com.mbb.TicketMaven.model.LayoutModel;
 import com.mbb.TicketMaven.model.ReservationModel;
 import com.mbb.TicketMaven.model.TableModel;
@@ -57,6 +33,16 @@ import com.mbb.TicketMaven.ui.filter.TableShowFilterPanel;
 import com.mbb.TicketMaven.ui.util.CircleView;
 import com.mbb.TicketMaven.ui.util.ComponentPrinter;
 import com.mbb.TicketMaven.util.Errmsg;
+import org.jgraph.JGraph;
+import org.jgraph.graph.*;
+
+import javax.swing.*;
+import java.awt.*;
+import java.awt.event.MouseEvent;
+import java.awt.geom.Rectangle2D;
+import java.util.Collection;
+import java.util.Hashtable;
+import java.util.Map;
 
 public class TableLayoutViewer extends ViewPanel {
 	private static final long serialVersionUID = 1L;

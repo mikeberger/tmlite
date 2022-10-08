@@ -22,18 +22,6 @@
 
 package com.mbb.TicketMaven.ui.options;
 
-import java.awt.GridBagConstraints;
-import java.awt.GridBagLayout;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
-
-import javax.swing.ImageIcon;
-import javax.swing.JButton;
-import javax.swing.JCheckBox;
-import javax.swing.JPanel;
-import javax.swing.JTabbedPane;
-import javax.swing.WindowConstants;
-
 import com.mbb.TicketMaven.model.LayoutModel;
 import com.mbb.TicketMaven.model.TicketFormat;
 import com.mbb.TicketMaven.ui.ViewFrame;
@@ -41,6 +29,11 @@ import com.mbb.TicketMaven.ui.ticketprint.TicketPreview;
 import com.mbb.TicketMaven.ui.util.GridBagConstraintsFactory;
 import com.mbb.TicketMaven.util.PrefName;
 import com.mbb.TicketMaven.util.Prefs;
+
+import javax.swing.*;
+import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 
 /**
  * OptionsView provides the UI for editing the TicketMaven Preferences.

@@ -22,16 +22,16 @@
 
 package com.mbb.TicketMaven.ui.ticketprint;
 
-import java.awt.BasicStroke;
-import java.awt.Color;
-import java.awt.Font;
-import java.awt.Graphics;
-import java.awt.Graphics2D;
-import java.awt.Image;
-import java.awt.MediaTracker;
-import java.awt.Shape;
-import java.awt.Stroke;
-import java.awt.Toolkit;
+import com.mbb.TicketMaven.model.LayoutModel;
+import com.mbb.TicketMaven.model.ShowModel;
+import com.mbb.TicketMaven.model.TicketFormat;
+import com.mbb.TicketMaven.model.entity.Layout;
+import com.mbb.TicketMaven.model.entity.Show;
+import com.mbb.TicketMaven.model.entity.Ticket;
+import com.mbb.TicketMaven.util.*;
+
+import javax.swing.*;
+import java.awt.*;
 import java.awt.geom.AffineTransform;
 import java.awt.print.PageFormat;
 import java.awt.print.Printable;
@@ -40,20 +40,6 @@ import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.logging.Logger;
-
-import javax.swing.JPanel;
-
-import com.mbb.TicketMaven.model.LayoutModel;
-import com.mbb.TicketMaven.model.ShowModel;
-import com.mbb.TicketMaven.model.TicketFormat;
-import com.mbb.TicketMaven.model.entity.Layout;
-import com.mbb.TicketMaven.model.entity.Show;
-import com.mbb.TicketMaven.model.entity.Ticket;
-import com.mbb.TicketMaven.util.Errmsg;
-import com.mbb.TicketMaven.util.Money;
-import com.mbb.TicketMaven.util.PrefName;
-import com.mbb.TicketMaven.util.Prefs;
-import com.mbb.TicketMaven.util.Warning;
 
 class TicketPanel extends JPanel implements Printable {
 

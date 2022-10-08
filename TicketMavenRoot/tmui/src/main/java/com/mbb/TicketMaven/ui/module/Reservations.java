@@ -22,12 +22,6 @@
 
 package com.mbb.TicketMaven.ui.module;
 
-import java.awt.Component;
-
-import javax.swing.Icon;
-import javax.swing.ImageIcon;
-import javax.swing.JTabbedPane;
-
 import com.mbb.TicketMaven.model.CustomerModel;
 import com.mbb.TicketMaven.model.ReservationModel;
 import com.mbb.TicketMaven.model.ShowModel;
@@ -36,6 +30,9 @@ import com.mbb.TicketMaven.ui.detail.ReservationView;
 import com.mbb.TicketMaven.ui.filter.ReservationFilterPanel;
 import com.mbb.TicketMaven.ui.tablelayout.TableLayoutViewer;
 import com.mbb.TicketMaven.ui.util.TableSorter;
+
+import javax.swing.*;
+import java.awt.*;
 
 /**
  * The Class Reservations provides the UI for managing reservations

@@ -22,17 +22,6 @@
 
 package com.mbb.TicketMaven.ui.detail;
 
-import java.awt.GridBagConstraints;
-import java.awt.GridBagLayout;
-import java.text.ParseException;
-import java.util.ArrayList;
-import java.util.Collection;
-
-import javax.swing.JButton;
-import javax.swing.JLabel;
-import javax.swing.JTextField;
-import javax.swing.SwingConstants;
-
 import com.mbb.TicketMaven.model.LayoutModel;
 import com.mbb.TicketMaven.model.PackageModel;
 import com.mbb.TicketMaven.model.ShowModel;
@@ -42,11 +31,13 @@ import com.mbb.TicketMaven.model.filter.ShowFilter;
 import com.mbb.TicketMaven.ui.BeanSelector;
 import com.mbb.TicketMaven.ui.util.GridBagConstraintsFactory;
 import com.mbb.TicketMaven.ui.util.TableSorter;
-import com.mbb.TicketMaven.util.Errmsg;
-import com.mbb.TicketMaven.util.Money;
-import com.mbb.TicketMaven.util.PrefName;
-import com.mbb.TicketMaven.util.Prefs;
-import com.mbb.TicketMaven.util.Warning;
+import com.mbb.TicketMaven.util.*;
+
+import javax.swing.*;
+import java.awt.*;
+import java.text.ParseException;
+import java.util.ArrayList;
+import java.util.Collection;
 
 public class PackageView extends ViewDetailPanel<TMPackage> {
 

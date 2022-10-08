@@ -22,21 +22,7 @@
 
 package com.mbb.TicketMaven.ui.report;
 
-import java.io.InputStream;
-import java.text.SimpleDateFormat;
-import java.util.ArrayList;
-import java.util.Collection;
-import java.util.HashMap;
-
-import javax.swing.ImageIcon;
-import javax.swing.JMenu;
-import javax.swing.JMenuItem;
-
-import com.mbb.TicketMaven.model.LayoutModel;
-import com.mbb.TicketMaven.model.ReservationModel;
-import com.mbb.TicketMaven.model.SeatModel;
-import com.mbb.TicketMaven.model.ShowModel;
-import com.mbb.TicketMaven.model.TicketModel;
+import com.mbb.TicketMaven.model.*;
 import com.mbb.TicketMaven.model.entity.Layout;
 import com.mbb.TicketMaven.model.entity.Reservation;
 import com.mbb.TicketMaven.model.entity.Show;
@@ -45,11 +31,14 @@ import com.mbb.TicketMaven.model.filter.ShowFilter;
 import com.mbb.TicketMaven.ui.BeanSelector;
 import com.mbb.TicketMaven.ui.seatgrid.SeatGrid;
 import com.mbb.TicketMaven.ui.util.TableSorter;
-import com.mbb.TicketMaven.util.Errmsg;
-import com.mbb.TicketMaven.util.FileIO;
-import com.mbb.TicketMaven.util.Money;
-import com.mbb.TicketMaven.util.PrefName;
-import com.mbb.TicketMaven.util.Prefs;
+import com.mbb.TicketMaven.util.*;
+
+import javax.swing.*;
+import java.io.InputStream;
+import java.text.SimpleDateFormat;
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.HashMap;
 
 /**
  * provides the report menu

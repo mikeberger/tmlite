@@ -22,16 +22,14 @@
 
 package com.mbb.TicketMaven.ui.module;
 
-import java.awt.Component;
-
-import javax.swing.Icon;
-import javax.swing.ImageIcon;
-
 import com.mbb.TicketMaven.model.PackageModel;
 import com.mbb.TicketMaven.model.entity.TMPackage;
 import com.mbb.TicketMaven.ui.detail.PackageView;
 import com.mbb.TicketMaven.ui.util.TableSorter;
 import com.mbb.TicketMaven.util.Money;
+
+import javax.swing.*;
+import java.awt.*;
 
 /**
  * The Class PackageManager provides the UI for managing packages

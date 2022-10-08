@@ -22,10 +22,17 @@
 
 package com.mbb.TicketMaven.ui.ticketprint;
 
-import java.awt.Dimension;
-import java.awt.Font;
-import java.awt.GridBagConstraints;
-import java.awt.GridBagLayout;
+import com.mbb.TicketMaven.model.TicketFormat;
+import com.mbb.TicketMaven.model.entity.Ticket;
+import com.mbb.TicketMaven.ui.util.ColorChooserButton;
+import com.mbb.TicketMaven.ui.util.FontChooser;
+import com.mbb.TicketMaven.ui.util.GridBagConstraintsFactory;
+import com.mbb.TicketMaven.ui.util.ImagePreviewFileChooser;
+import com.mbb.TicketMaven.util.Errmsg;
+
+import javax.swing.*;
+import javax.swing.filechooser.FileFilter;
+import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.KeyEvent;
@@ -34,23 +41,6 @@ import java.io.File;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Date;
-
-import javax.swing.JButton;
-import javax.swing.JCheckBox;
-import javax.swing.JFileChooser;
-import javax.swing.JLabel;
-import javax.swing.JPanel;
-import javax.swing.JScrollPane;
-import javax.swing.JTextField;
-import javax.swing.filechooser.FileFilter;
-
-import com.mbb.TicketMaven.model.TicketFormat;
-import com.mbb.TicketMaven.model.entity.Ticket;
-import com.mbb.TicketMaven.ui.util.ColorChooserButton;
-import com.mbb.TicketMaven.ui.util.FontChooser;
-import com.mbb.TicketMaven.ui.util.GridBagConstraintsFactory;
-import com.mbb.TicketMaven.ui.util.ImagePreviewFileChooser;
-import com.mbb.TicketMaven.util.Errmsg;
 
 public class TicketPreview extends JPanel {
 

@@ -22,13 +22,12 @@
 package com.mbb.TicketMaven.model;
 
 
-
-import java.util.Collection;
-
 import com.mbb.TicketMaven.model.entity.Table;
 import com.mbb.TicketMaven.model.jdbc.TableJdbcDB;
 import com.mbb.TicketMaven.util.PrefName;
 import com.mbb.TicketMaven.util.Prefs;
+
+import java.util.Collection;
 
 /**
  * The Table Model.

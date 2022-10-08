@@ -23,8 +23,7 @@
 
 package com.mbb.TicketMaven.ui.util;
 
-import java.awt.GridBagConstraints;
-import java.awt.Insets;
+import java.awt.*;
 
 /**
  * A factory for creating GridBagConstraints objects to remove code bloat in the UI code.

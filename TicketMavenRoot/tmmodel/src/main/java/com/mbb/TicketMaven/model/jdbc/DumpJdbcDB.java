@@ -23,11 +23,7 @@
 
 package com.mbb.TicketMaven.model.jdbc;
 
-import java.sql.Connection;
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
-import java.sql.ResultSetMetaData;
-import java.sql.SQLException;
+import java.sql.*;
 
 /**
  * This class connects to a database and dumps all the tables and contents out

@@ -22,18 +22,14 @@
 
 package com.mbb.TicketMaven.ui.detail;
 
-import java.awt.GridBagConstraints;
-import java.awt.GridBagLayout;
-
-import javax.swing.JComboBox;
-import javax.swing.JLabel;
-import javax.swing.JTextField;
-
 import com.mbb.TicketMaven.model.ZoneModel;
 import com.mbb.TicketMaven.model.entity.Zone;
 import com.mbb.TicketMaven.ui.util.GridBagConstraintsFactory;
 import com.mbb.TicketMaven.ui.util.LimitDocument;
 import com.mbb.TicketMaven.util.Warning;
+
+import javax.swing.*;
+import java.awt.*;
 
 public class ZoneView extends ViewDetailPanel<Zone> {
 

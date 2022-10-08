@@ -22,32 +22,6 @@
 
 package com.mbb.TicketMaven.ui.module;
 
-import java.awt.Color;
-import java.awt.Component;
-import java.awt.GridBagConstraints;
-import java.awt.GridBagLayout;
-import java.lang.reflect.Method;
-import java.sql.SQLException;
-import java.util.ArrayList;
-import java.util.Collection;
-import java.util.Date;
-import java.util.Iterator;
-
-import javax.swing.DefaultListSelectionModel;
-import javax.swing.ImageIcon;
-import javax.swing.JButton;
-import javax.swing.JLabel;
-import javax.swing.JOptionPane;
-import javax.swing.JPanel;
-import javax.swing.JScrollPane;
-import javax.swing.JSplitPane;
-import javax.swing.JTable;
-import javax.swing.ListSelectionModel;
-import javax.swing.border.TitledBorder;
-import javax.swing.event.TableModelEvent;
-import javax.swing.table.TableCellRenderer;
-import javax.swing.table.TableModel;
-
 import com.mbb.TicketMaven.model.CascadeDeleteProvider;
 import com.mbb.TicketMaven.model.KeyedEntityModel;
 import com.mbb.TicketMaven.model.entity.KeyedEntity;
@@ -61,6 +35,19 @@ import com.mbb.TicketMaven.ui.util.TableSorter;
 import com.mbb.TicketMaven.util.Errmsg;
 import com.mbb.TicketMaven.util.Money;
 import com.mbb.TicketMaven.util.Warning;
+
+import javax.swing.*;
+import javax.swing.border.TitledBorder;
+import javax.swing.event.TableModelEvent;
+import javax.swing.table.TableCellRenderer;
+import javax.swing.table.TableModel;
+import java.awt.*;
+import java.lang.reflect.Method;
+import java.sql.SQLException;
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.Date;
+import java.util.Iterator;
 
 /**
  * Class ViewListPanel provides a panel that manages a particular Entity - aka

@@ -22,9 +22,8 @@
 
 package com.mbb.TicketMaven.ui.module;
 
-import java.awt.Component;
-
-import javax.swing.Icon;
+import javax.swing.*;
+import java.awt.*;
 
 /**
  * interface implemented by all UI Modules. The MainView manages a set of UI

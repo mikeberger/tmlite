@@ -22,18 +22,15 @@
 
 package com.mbb.TicketMaven.ui.seatgrid;
 
-import java.awt.GridBagConstraints;
-import java.awt.GridBagLayout;
-import java.util.ArrayList;
-import java.util.List;
-
-import javax.swing.JButton;
-import javax.swing.JDialog;
-
 import com.mbb.TicketMaven.model.ShowModel;
 import com.mbb.TicketMaven.model.entity.Seat;
 import com.mbb.TicketMaven.model.entity.Show;
 import com.mbb.TicketMaven.util.Errmsg;
+
+import javax.swing.*;
+import java.awt.*;
+import java.util.ArrayList;
+import java.util.List;
 
 public class SeatSelector extends JDialog {
 

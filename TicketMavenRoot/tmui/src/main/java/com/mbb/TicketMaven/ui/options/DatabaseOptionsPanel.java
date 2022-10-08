@@ -22,17 +22,6 @@
 
 package com.mbb.TicketMaven.ui.options;
 
-import java.awt.GridBagConstraints;
-import java.awt.GridBagLayout;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
-import java.io.File;
-
-import javax.swing.JButton;
-import javax.swing.JFileChooser;
-import javax.swing.JTextArea;
-import javax.swing.JTextField;
-
 import com.mbb.TicketMaven.model.Model;
 import com.mbb.TicketMaven.model.jdbc.JdbcDB;
 import com.mbb.TicketMaven.ui.TicketMaven;
@@ -43,6 +32,12 @@ import com.mbb.TicketMaven.util.Errmsg;
 import com.mbb.TicketMaven.util.FileIO;
 import com.mbb.TicketMaven.util.PrefName;
 import com.mbb.TicketMaven.util.Prefs;
+
+import javax.swing.*;
+import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.io.File;
 
 /**
  * provides the UI for the Database options tab

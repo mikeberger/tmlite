@@ -22,22 +22,7 @@
 
 package com.mbb.TicketMaven.ui.detail;
 
-import java.awt.GridBagConstraints;
-import java.awt.GridBagLayout;
-import java.text.ParseException;
-import java.util.ArrayList;
-import java.util.List;
-
-import javax.swing.JButton;
-import javax.swing.JCheckBox;
-import javax.swing.JLabel;
-import javax.swing.JTextField;
-
-import com.mbb.TicketMaven.model.CustomerModel;
-import com.mbb.TicketMaven.model.LayoutModel;
-import com.mbb.TicketMaven.model.SeatModel;
-import com.mbb.TicketMaven.model.ShowModel;
-import com.mbb.TicketMaven.model.TicketModel;
+import com.mbb.TicketMaven.model.*;
 import com.mbb.TicketMaven.model.entity.Customer;
 import com.mbb.TicketMaven.model.entity.Seat;
 import com.mbb.TicketMaven.model.entity.Show;
@@ -52,6 +37,12 @@ import com.mbb.TicketMaven.ui.util.TableSorter;
 import com.mbb.TicketMaven.util.Errmsg;
 import com.mbb.TicketMaven.util.Money;
 import com.mbb.TicketMaven.util.Warning;
+
+import javax.swing.*;
+import java.awt.*;
+import java.text.ParseException;
+import java.util.ArrayList;
+import java.util.List;
 
 public class TicketView extends ViewDetailPanel<Ticket> {
 

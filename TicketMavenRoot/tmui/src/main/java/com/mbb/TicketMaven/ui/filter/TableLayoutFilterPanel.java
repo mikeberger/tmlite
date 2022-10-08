@@ -22,14 +22,6 @@
 
 package com.mbb.TicketMaven.ui.filter;
 
-import java.awt.GridBagConstraints;
-import java.awt.GridBagLayout;
-import java.util.ArrayList;
-import java.util.Collection;
-
-import javax.swing.JButton;
-import javax.swing.JTextField;
-
 import com.mbb.TicketMaven.model.LayoutModel;
 import com.mbb.TicketMaven.model.TableModel;
 import com.mbb.TicketMaven.model.entity.KeyedEntity;
@@ -41,6 +33,11 @@ import com.mbb.TicketMaven.ui.tablelayout.LayoutChangeListener;
 import com.mbb.TicketMaven.ui.util.GridBagConstraintsFactory;
 import com.mbb.TicketMaven.ui.util.TableSorter;
 import com.mbb.TicketMaven.util.Errmsg;
+
+import javax.swing.*;
+import java.awt.*;
+import java.util.ArrayList;
+import java.util.Collection;
 
 /**
  * This class filters tables by layout

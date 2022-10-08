@@ -22,11 +22,6 @@
 
 package com.mbb.TicketMaven.ui.module;
 
-import java.awt.Component;
-
-import javax.swing.Icon;
-import javax.swing.ImageIcon;
-
 import com.mbb.TicketMaven.model.CustomerModel;
 import com.mbb.TicketMaven.model.ShowModel;
 import com.mbb.TicketMaven.model.TicketRequestModel;
@@ -34,6 +29,9 @@ import com.mbb.TicketMaven.model.entity.TicketRequest;
 import com.mbb.TicketMaven.ui.detail.RequestView;
 import com.mbb.TicketMaven.ui.filter.RequestFilterPanel;
 import com.mbb.TicketMaven.ui.util.TableSorter;
+
+import javax.swing.*;
+import java.awt.*;
 
 /**
  * The Class RequestManager provides the UI for managing ticket requests

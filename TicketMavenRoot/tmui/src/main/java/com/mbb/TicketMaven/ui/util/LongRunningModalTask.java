@@ -21,14 +21,10 @@
  */
 package com.mbb.TicketMaven.ui.util;
 
-import java.awt.Dimension;
-import java.awt.Toolkit;
+import javax.swing.*;
+import java.awt.*;
 import java.beans.PropertyChangeEvent;
 import java.beans.PropertyChangeListener;
-
-import javax.swing.JDialog;
-import javax.swing.JLabel;
-import javax.swing.SwingWorker;
 
 /**
  * Executes a long running swing-worker taks while showing a modal

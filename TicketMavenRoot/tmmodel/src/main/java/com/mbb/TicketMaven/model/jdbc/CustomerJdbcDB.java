@@ -23,13 +23,13 @@
 
 package com.mbb.TicketMaven.model.jdbc;
 
+import com.mbb.TicketMaven.model.entity.Customer;
+
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.Collection;
-
-import com.mbb.TicketMaven.model.entity.Customer;
 
 /**
  * JDBC Layer for Customer Entitys

@@ -24,13 +24,13 @@
 
 package com.mbb.TicketMaven.ui.filter;
 
-import java.text.SimpleDateFormat;
-
 import com.mbb.TicketMaven.model.Model;
 import com.mbb.TicketMaven.model.entity.KeyedEntity;
 import com.mbb.TicketMaven.model.filter.KeyedEntityFilter;
 import com.mbb.TicketMaven.util.PrefName;
 import com.mbb.TicketMaven.util.Prefs;
+
+import java.text.SimpleDateFormat;
  
 /**
  * This is the base class for FilterPanels, which are Panels that appear at the top of a ViewListPanel and that are used to filter

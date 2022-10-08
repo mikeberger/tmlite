@@ -22,18 +22,13 @@
 
 package com.mbb.TicketMaven.ui.util;
 
-import java.awt.GridBagConstraints;
-import java.awt.GridBagLayout;
-import java.awt.Insets;
+import com.toedter.calendar.JDateChooser;
+
+import javax.swing.*;
+import java.awt.*;
 import java.util.Calendar;
 import java.util.Date;
 import java.util.GregorianCalendar;
-
-import javax.swing.JComboBox;
-import javax.swing.JLabel;
-import javax.swing.JPanel;
-
-import com.toedter.calendar.JDateChooser;
 
 /**
  * Creates a JPanel that lets the user select a date and time

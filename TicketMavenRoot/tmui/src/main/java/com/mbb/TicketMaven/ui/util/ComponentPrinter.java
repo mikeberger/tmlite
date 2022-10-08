@@ -21,21 +21,14 @@
  */
 package com.mbb.TicketMaven.ui.util;
 
-import java.awt.Dimension;
-import java.awt.Graphics;
-import java.awt.Graphics2D;
-import java.awt.print.PageFormat;
-import java.awt.print.Paper;
-import java.awt.print.Printable;
-import java.awt.print.PrinterException;
-import java.awt.print.PrinterJob;
+import com.mbb.TicketMaven.util.Errmsg;
+
+import javax.swing.*;
+import java.awt.*;
+import java.awt.print.*;
 import java.lang.reflect.Method;
 import java.util.logging.Level;
 import java.util.logging.Logger;
-
-import javax.swing.JComponent;
-
-import com.mbb.TicketMaven.util.Errmsg;
 
 /**
  * This class Prints a Java Component

@@ -1,17 +1,13 @@
 
 package com.mbb.TicketMaven.model;
 
-import java.util.ArrayList;
-import java.util.concurrent.TimeUnit;
-
 import com.github.javafaker.Faker;
-import com.mbb.TicketMaven.model.entity.Customer;
-import com.mbb.TicketMaven.model.entity.Layout;
-import com.mbb.TicketMaven.model.entity.Show;
-import com.mbb.TicketMaven.model.entity.TicketRequest;
-import com.mbb.TicketMaven.model.entity.Zone;
+import com.mbb.TicketMaven.model.entity.*;
 import com.mbb.TicketMaven.model.jdbc.DumpJdbcDB;
 import com.mbb.TicketMaven.model.jdbc.JdbcDB;
+
+import java.util.ArrayList;
+import java.util.concurrent.TimeUnit;
 
 public class CreateTestData {
 	

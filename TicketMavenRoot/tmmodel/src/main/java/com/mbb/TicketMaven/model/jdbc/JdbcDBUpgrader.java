@@ -22,10 +22,10 @@
 
 package com.mbb.TicketMaven.model.jdbc;
 
+import com.mbb.TicketMaven.util.Errmsg;
+
 import java.sql.SQLException;
 import java.util.logging.Logger;
-
-import com.mbb.TicketMaven.util.Errmsg;
 
 /**
  * Class JdbcDBUpgrader is used to upgrade HSQL database in-place when the schema changes for a 

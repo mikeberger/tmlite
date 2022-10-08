@@ -22,11 +22,11 @@
 
 package com.mbb.TicketMaven.model.filter;
 
-import java.util.Collection;
-
 import com.mbb.TicketMaven.model.SeatModel;
 import com.mbb.TicketMaven.model.entity.Seat;
 import com.mbb.TicketMaven.util.Errmsg;
+
+import java.util.Collection;
 
 /** filters out Seats that are available for a particular show */
 public class AvailableSeatsForShowFilter implements KeyedEntityFilter<Seat> {

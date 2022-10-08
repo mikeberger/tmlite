@@ -9,30 +9,15 @@
  */
 package com.mbb.TicketMaven.ui.ticketprint;
 
+import com.mbb.TicketMaven.model.*;
+import com.mbb.TicketMaven.model.entity.*;
+import com.mbb.TicketMaven.util.Errmsg;
+import com.mbb.TicketMaven.util.Warning;
+
 import java.awt.print.PageFormat;
 import java.awt.print.Paper;
 import java.awt.print.PrinterJob;
-import java.util.ArrayList;
-import java.util.Collection;
-import java.util.Comparator;
-import java.util.HashSet;
-import java.util.Iterator;
-import java.util.Set;
-import java.util.TreeSet;
-
-import com.mbb.TicketMaven.model.LayoutModel;
-import com.mbb.TicketMaven.model.ReservationModel;
-import com.mbb.TicketMaven.model.SeatModel;
-import com.mbb.TicketMaven.model.ShowModel;
-import com.mbb.TicketMaven.model.TicketModel;
-import com.mbb.TicketMaven.model.entity.Customer;
-import com.mbb.TicketMaven.model.entity.Layout;
-import com.mbb.TicketMaven.model.entity.Reservation;
-import com.mbb.TicketMaven.model.entity.Seat;
-import com.mbb.TicketMaven.model.entity.Show;
-import com.mbb.TicketMaven.model.entity.Ticket;
-import com.mbb.TicketMaven.util.Errmsg;
-import com.mbb.TicketMaven.util.Warning;
+import java.util.*;
 
 
 class TicketPrinterPlugin  {

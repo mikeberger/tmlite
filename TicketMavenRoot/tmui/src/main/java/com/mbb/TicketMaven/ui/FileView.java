@@ -46,22 +46,17 @@ Copyright 2003 by Mike Berger
 
 package com.mbb.TicketMaven.ui;
 
-import java.awt.GridBagConstraints;
-import java.awt.GridBagLayout;
+import com.mbb.TicketMaven.ui.util.GridBagConstraintsFactory;
+import com.mbb.TicketMaven.util.Errmsg;
+import com.mbb.TicketMaven.util.PrefName;
+
+import javax.swing.*;
+import javax.swing.text.Document;
+import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.print.PrinterException;
 import java.io.IOException;
-
-import javax.swing.JButton;
-import javax.swing.JEditorPane;
-import javax.swing.JPanel;
-import javax.swing.JScrollPane;
-import javax.swing.text.Document;
-
-import com.mbb.TicketMaven.ui.util.GridBagConstraintsFactory;
-import com.mbb.TicketMaven.util.Errmsg;
-import com.mbb.TicketMaven.util.PrefName;
 
 /**
  * dockable view that shows information from a file

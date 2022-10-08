@@ -21,12 +21,10 @@
  */
 package com.mbb.TicketMaven.ui.util;
 
-import java.awt.Color;
+import javax.swing.*;
+import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-
-import javax.swing.JButton;
-import javax.swing.JColorChooser;
 
 /**
  * The Class ColorChooserButton - a button that is used to popup a color chooser

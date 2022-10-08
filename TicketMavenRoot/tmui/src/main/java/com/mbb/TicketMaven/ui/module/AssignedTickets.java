@@ -23,18 +23,7 @@
 
 package com.mbb.TicketMaven.ui.module;
 
-import java.awt.Component;
-
-import javax.swing.Icon;
-import javax.swing.ImageIcon;
-import javax.swing.JTabbedPane;
-import javax.swing.table.TableModel;
-
-import com.mbb.TicketMaven.model.CustomerModel;
-import com.mbb.TicketMaven.model.KeyedEntityModel;
-import com.mbb.TicketMaven.model.SeatModel;
-import com.mbb.TicketMaven.model.ShowModel;
-import com.mbb.TicketMaven.model.TicketModel;
+import com.mbb.TicketMaven.model.*;
 import com.mbb.TicketMaven.model.entity.Ticket;
 import com.mbb.TicketMaven.ui.detail.TicketView;
 import com.mbb.TicketMaven.ui.detail.ViewDetailPanel;
@@ -42,6 +31,10 @@ import com.mbb.TicketMaven.ui.filter.FilterPanel;
 import com.mbb.TicketMaven.ui.filter.TicketFilterPanel;
 import com.mbb.TicketMaven.ui.seatgrid.SeatGridTicketViewer;
 import com.mbb.TicketMaven.ui.util.TableSorter;
+
+import javax.swing.*;
+import javax.swing.table.TableModel;
+import java.awt.*;
 
 /**
  * The Class AssignedTickets provides the Assigned Tickets manager of the UI

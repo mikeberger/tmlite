@@ -24,11 +24,11 @@
 
 package com.mbb.TicketMaven.ui;
 
-import java.text.SimpleDateFormat;
-
 import com.mbb.TicketMaven.model.Model;
 import com.mbb.TicketMaven.util.PrefName;
 import com.mbb.TicketMaven.util.Prefs;
+
+import java.text.SimpleDateFormat;
  
 /**
  * A ViewPanel is an abstract base class representing a JPanel that listens for changes to a Model

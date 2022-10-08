@@ -22,15 +22,6 @@
 package com.mbb.TicketMaven.model;
 
 
-
-import java.util.ArrayList;
-import java.util.Collection;
-import java.util.HashMap;
-import java.util.HashSet;
-import java.util.Set;
-import java.util.logging.Level;
-import java.util.logging.Logger;
-
 import com.mbb.TicketMaven.model.entity.Layout;
 import com.mbb.TicketMaven.model.entity.Seat;
 import com.mbb.TicketMaven.model.entity.Show;
@@ -38,6 +29,10 @@ import com.mbb.TicketMaven.model.jdbc.JdbcDB;
 import com.mbb.TicketMaven.model.jdbc.SeatJdbcDB;
 import com.mbb.TicketMaven.util.PrefName;
 import com.mbb.TicketMaven.util.Prefs;
+
+import java.util.*;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 /**
  * The Seat Model

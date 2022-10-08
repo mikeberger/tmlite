@@ -22,34 +22,8 @@
 
 package com.mbb.TicketMaven.ui.module;
 
-import java.awt.Color;
-import java.awt.Component;
-import java.awt.GridBagConstraints;
-import java.awt.GridBagLayout;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
-import java.util.Collection;
-
-import javax.swing.Icon;
-import javax.swing.ImageIcon;
-import javax.swing.JButton;
-import javax.swing.JLabel;
-import javax.swing.JPanel;
-import javax.swing.JTextField;
-
-import com.mbb.TicketMaven.model.CustomerModel;
-import com.mbb.TicketMaven.model.LayoutModel;
-import com.mbb.TicketMaven.model.LotteryManager;
-import com.mbb.TicketMaven.model.SeatModel;
-import com.mbb.TicketMaven.model.ShowModel;
-import com.mbb.TicketMaven.model.TicketModel;
-import com.mbb.TicketMaven.model.TicketRequestModel;
-import com.mbb.TicketMaven.model.ZoneModel;
-import com.mbb.TicketMaven.model.entity.Seat;
-import com.mbb.TicketMaven.model.entity.Show;
-import com.mbb.TicketMaven.model.entity.Ticket;
-import com.mbb.TicketMaven.model.entity.TicketRequest;
-import com.mbb.TicketMaven.model.entity.Zone;
+import com.mbb.TicketMaven.model.*;
+import com.mbb.TicketMaven.model.entity.*;
 import com.mbb.TicketMaven.model.filter.ShowFilter;
 import com.mbb.TicketMaven.ui.BeanSelector;
 import com.mbb.TicketMaven.ui.ViewPanel;
@@ -57,6 +31,12 @@ import com.mbb.TicketMaven.ui.util.ConfirmDialog;
 import com.mbb.TicketMaven.ui.util.GridBagConstraintsFactory;
 import com.mbb.TicketMaven.ui.util.TableSorter;
 import com.mbb.TicketMaven.util.Errmsg;
+
+import javax.swing.*;
+import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.util.Collection;
 
 /**
  * LotteryPanel shows a form that lets users perform a lottery or undo a

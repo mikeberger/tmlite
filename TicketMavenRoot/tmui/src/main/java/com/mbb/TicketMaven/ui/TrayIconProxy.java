@@ -23,17 +23,12 @@
 
 package com.mbb.TicketMaven.ui;
 
-import java.awt.Image;
-import java.awt.MenuItem;
-import java.awt.PopupMenu;
-import java.awt.SystemTray;
-import java.awt.Toolkit;
-import java.awt.TrayIcon;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
-
 import com.mbb.TicketMaven.ui.options.OptionsView;
 import com.mbb.TicketMaven.util.Warning;
+
+import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 
 /**
  * Class JDICTrayIconProxy is the link between TicketMaven and the JDIC system tray icon.

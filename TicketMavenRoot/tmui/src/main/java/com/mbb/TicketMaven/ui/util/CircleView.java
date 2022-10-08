@@ -21,18 +21,10 @@
  */
 package com.mbb.TicketMaven.ui.util;
 
-import java.awt.Color;
-import java.awt.Dimension;
-import java.awt.GradientPaint;
-import java.awt.Graphics;
-import java.awt.Graphics2D;
-import java.awt.geom.Point2D;
+import org.jgraph.graph.*;
 
-import org.jgraph.graph.CellViewRenderer;
-import org.jgraph.graph.EdgeView;
-import org.jgraph.graph.GraphConstants;
-import org.jgraph.graph.VertexRenderer;
-import org.jgraph.graph.VertexView;
+import java.awt.*;
+import java.awt.geom.Point2D;
 
 /**
  * The Class CircleView draws a circle in JGraph for the Table layout diagram.

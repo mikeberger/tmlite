@@ -23,13 +23,8 @@
 
 package com.mbb.TicketMaven.util;
 
-import java.io.File;
-import java.io.FileInputStream;
-import java.io.FileOutputStream;
-import java.io.InputStream;
-import java.io.Reader;
-
-import javax.swing.JFileChooser;
+import javax.swing.*;
+import java.io.*;
 
 /**
  * Some helpers for prompting the users to select files for input and output

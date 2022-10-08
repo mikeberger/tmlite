@@ -23,10 +23,10 @@
 
 package com.mbb.TicketMaven.ui.util;
 
-import java.util.logging.Logger;
-
 import com.mbb.TicketMaven.util.ErrorHandler;
 import com.mbb.TicketMaven.util.Warning;
+
+import java.util.logging.Logger;
 
 /**
  * UI error handling 

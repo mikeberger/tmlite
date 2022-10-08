@@ -22,38 +22,22 @@
 
 package com.mbb.TicketMaven.ui.seatgrid;
 
-import java.awt.Color;
-import java.awt.GridBagConstraints;
-import java.awt.GridBagLayout;
-import java.awt.GridLayout;
+import com.mbb.TicketMaven.model.*;
+import com.mbb.TicketMaven.model.entity.*;
+import com.mbb.TicketMaven.ui.ViewPanel;
+import com.mbb.TicketMaven.ui.tablelayout.LayoutChangeListener;
+import com.mbb.TicketMaven.ui.util.FlatButton;
+import com.mbb.TicketMaven.ui.util.GridBagConstraintsFactory;
+import com.mbb.TicketMaven.util.Errmsg;
+
+import javax.swing.*;
+import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.HashMap;
 import java.util.Iterator;
-
-import javax.swing.JCheckBox;
-import javax.swing.JLabel;
-import javax.swing.JPanel;
-import javax.swing.SwingConstants;
-
-import com.mbb.TicketMaven.model.CustomerModel;
-import com.mbb.TicketMaven.model.LayoutModel;
-import com.mbb.TicketMaven.model.SeatModel;
-import com.mbb.TicketMaven.model.ShowModel;
-import com.mbb.TicketMaven.model.TicketModel;
-import com.mbb.TicketMaven.model.ZoneModel;
-import com.mbb.TicketMaven.model.entity.Layout;
-import com.mbb.TicketMaven.model.entity.Seat;
-import com.mbb.TicketMaven.model.entity.Show;
-import com.mbb.TicketMaven.model.entity.Ticket;
-import com.mbb.TicketMaven.model.entity.Zone;
-import com.mbb.TicketMaven.ui.ViewPanel;
-import com.mbb.TicketMaven.ui.tablelayout.LayoutChangeListener;
-import com.mbb.TicketMaven.ui.util.FlatButton;
-import com.mbb.TicketMaven.ui.util.GridBagConstraintsFactory;
-import com.mbb.TicketMaven.util.Errmsg;
 
 public class SeatGridPanel extends ViewPanel implements LayoutChangeListener {
 

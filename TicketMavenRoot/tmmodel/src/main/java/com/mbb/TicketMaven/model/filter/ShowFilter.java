@@ -22,15 +22,15 @@
 
 package com.mbb.TicketMaven.model.filter;
 
-import java.util.ArrayList;
-import java.util.Collection;
-import java.util.Date;
-
 import com.mbb.TicketMaven.model.LayoutModel;
 import com.mbb.TicketMaven.model.ShowModel;
 import com.mbb.TicketMaven.model.entity.KeyedEntity;
 import com.mbb.TicketMaven.model.entity.Show;
 import com.mbb.TicketMaven.util.Errmsg;
+
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.Date;
 
 /** filter Shows based on 2 criteria:
 <br> seating - Auditorium or Table

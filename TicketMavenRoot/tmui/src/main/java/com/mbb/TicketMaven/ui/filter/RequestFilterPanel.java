@@ -22,16 +22,6 @@
 
 package com.mbb.TicketMaven.ui.filter;
 
-import java.awt.GridBagConstraints;
-import java.awt.GridBagLayout;
-import java.util.ArrayList;
-import java.util.Collection;
-import java.util.Date;
-
-import javax.swing.JButton;
-import javax.swing.JCheckBox;
-import javax.swing.JTextField;
-
 import com.mbb.TicketMaven.model.CustomerModel;
 import com.mbb.TicketMaven.model.LayoutModel;
 import com.mbb.TicketMaven.model.ShowModel;
@@ -47,6 +37,12 @@ import com.mbb.TicketMaven.ui.util.TableSorter;
 import com.mbb.TicketMaven.util.Errmsg;
 import com.mbb.TicketMaven.util.PrefName;
 import com.mbb.TicketMaven.util.Prefs;
+
+import javax.swing.*;
+import java.awt.*;
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.Date;
 
 /**
  * This class filters requests by customer, show, and date

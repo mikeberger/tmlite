@@ -22,11 +22,10 @@
 package com.mbb.TicketMaven.model;
 
 
-
-import java.util.Collection;
-
 import com.mbb.TicketMaven.model.entity.KeyedEntity;
 import com.mbb.TicketMaven.model.jdbc.JdbcDBFactory;
+
+import java.util.Collection;
 
 /**
  * This is the base class for TicketMaven data models. Each KeyedEntityModel deals with one Entity type.

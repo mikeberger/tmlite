@@ -22,10 +22,10 @@
 
 package com.mbb.TicketMaven.ui.util;
 
-import java.sql.SQLException;
-
 import com.mbb.TicketMaven.model.jdbc.JdbcDB;
 import com.mbb.TicketMaven.util.Errmsg;
+
+import java.sql.SQLException;
 
 /**
  * This class performs automatic release transition upgrades on a jdbc database. 

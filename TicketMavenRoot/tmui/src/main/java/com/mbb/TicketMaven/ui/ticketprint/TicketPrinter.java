@@ -1,11 +1,11 @@
 package com.mbb.TicketMaven.ui.ticketprint;
 
-import java.util.Collection;
-
 import com.mbb.TicketMaven.model.entity.Customer;
 import com.mbb.TicketMaven.model.entity.Seat;
 import com.mbb.TicketMaven.model.entity.Show;
 import com.mbb.TicketMaven.model.entity.Ticket;
+
+import java.util.Collection;
 
 class TicketPrinter  {
 

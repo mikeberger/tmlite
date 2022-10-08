@@ -22,20 +22,15 @@
 
 package com.mbb.TicketMaven.model;
 
-import java.util.Date;
-import java.util.logging.Level;
-import java.util.logging.LogManager;
-
+import com.mbb.TicketMaven.model.entity.*;
+import com.mbb.TicketMaven.model.jdbc.JdbcDB;
 import org.junit.AfterClass;
 import org.junit.BeforeClass;
 import org.junit.Test;
 
-import com.mbb.TicketMaven.model.entity.Customer;
-import com.mbb.TicketMaven.model.entity.Layout;
-import com.mbb.TicketMaven.model.entity.Reservation;
-import com.mbb.TicketMaven.model.entity.Show;
-import com.mbb.TicketMaven.model.entity.Table;
-import com.mbb.TicketMaven.model.jdbc.JdbcDB;
+import java.util.Date;
+import java.util.logging.Level;
+import java.util.logging.LogManager;
 
 
 public class JdbcTest {

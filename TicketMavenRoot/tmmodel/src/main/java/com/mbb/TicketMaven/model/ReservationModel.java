@@ -22,12 +22,11 @@
 package com.mbb.TicketMaven.model;
 
 
+import com.mbb.TicketMaven.model.entity.Reservation;
+import com.mbb.TicketMaven.model.jdbc.ReservationJdbcDB;
 
 import java.util.ArrayList;
 import java.util.Collection;
-
-import com.mbb.TicketMaven.model.entity.Reservation;
-import com.mbb.TicketMaven.model.jdbc.ReservationJdbcDB;
 
 /**
  * the reservation model

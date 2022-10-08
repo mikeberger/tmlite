@@ -22,34 +22,7 @@
 
 package com.mbb.TicketMaven.ui.detail;
 
-import java.awt.Component;
-import java.awt.Container;
-import java.awt.Dimension;
-import java.awt.GridBagConstraints;
-import java.awt.GridBagLayout;
-import java.awt.GridLayout;
-import java.awt.Insets;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
-import java.text.ParseException;
-import java.util.Collection;
-import java.util.Date;
-import java.util.Iterator;
-
-import javax.swing.JButton;
-import javax.swing.JComboBox;
-import javax.swing.JLabel;
-import javax.swing.JPanel;
-import javax.swing.JSplitPane;
-import javax.swing.JTabbedPane;
-import javax.swing.JTextField;
-import javax.swing.SwingConstants;
-
-import com.mbb.TicketMaven.model.LayoutModel;
-import com.mbb.TicketMaven.model.ReservationModel;
-import com.mbb.TicketMaven.model.ShowModel;
-import com.mbb.TicketMaven.model.TicketFormat;
-import com.mbb.TicketMaven.model.TicketModel;
+import com.mbb.TicketMaven.model.*;
 import com.mbb.TicketMaven.model.entity.Layout;
 import com.mbb.TicketMaven.model.entity.Reservation;
 import com.mbb.TicketMaven.model.entity.Show;
@@ -61,6 +34,15 @@ import com.mbb.TicketMaven.ui.util.LimitDocument;
 import com.mbb.TicketMaven.util.Errmsg;
 import com.mbb.TicketMaven.util.Money;
 import com.mbb.TicketMaven.util.Warning;
+
+import javax.swing.*;
+import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.text.ParseException;
+import java.util.Collection;
+import java.util.Date;
+import java.util.Iterator;
 
 /**
  * 

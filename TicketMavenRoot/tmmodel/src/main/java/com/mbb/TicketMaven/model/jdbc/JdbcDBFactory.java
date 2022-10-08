@@ -23,17 +23,7 @@
 package com.mbb.TicketMaven.model.jdbc;
 
 import com.mbb.TicketMaven.model.KeyedEntityDB;
-import com.mbb.TicketMaven.model.entity.Customer;
-import com.mbb.TicketMaven.model.entity.KeyedEntity;
-import com.mbb.TicketMaven.model.entity.Layout;
-import com.mbb.TicketMaven.model.entity.Reservation;
-import com.mbb.TicketMaven.model.entity.Seat;
-import com.mbb.TicketMaven.model.entity.Show;
-import com.mbb.TicketMaven.model.entity.TMPackage;
-import com.mbb.TicketMaven.model.entity.Table;
-import com.mbb.TicketMaven.model.entity.Ticket;
-import com.mbb.TicketMaven.model.entity.TicketRequest;
-import com.mbb.TicketMaven.model.entity.Zone;
+import com.mbb.TicketMaven.model.entity.*;
 
 /**
  * A singleton instance which creates class-specific {@link KeyedEntityDB KeyedEntityDB}

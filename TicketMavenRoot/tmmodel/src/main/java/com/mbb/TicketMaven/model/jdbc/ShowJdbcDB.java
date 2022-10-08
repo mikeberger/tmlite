@@ -22,16 +22,16 @@
 
 package com.mbb.TicketMaven.model.jdbc;
 
+import com.mbb.TicketMaven.model.TicketFormat;
+import com.mbb.TicketMaven.model.entity.Layout;
+import com.mbb.TicketMaven.model.entity.Show;
+
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.Collection;
-
-import com.mbb.TicketMaven.model.TicketFormat;
-import com.mbb.TicketMaven.model.entity.Layout;
-import com.mbb.TicketMaven.model.entity.Show;
 
 /**
  * JDBC layer for show Entitys

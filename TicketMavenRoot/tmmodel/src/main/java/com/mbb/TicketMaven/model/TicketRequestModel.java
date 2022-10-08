@@ -22,13 +22,12 @@
 package com.mbb.TicketMaven.model;
 
 
-
-import java.util.ArrayList;
-
 import com.mbb.TicketMaven.model.entity.Show;
 import com.mbb.TicketMaven.model.entity.TicketRequest;
 import com.mbb.TicketMaven.model.jdbc.RequestJdbcDB;
 import com.mbb.TicketMaven.util.Errmsg;
+
+import java.util.ArrayList;
 
 /**
  * The Ticket Request Model.

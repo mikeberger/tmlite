@@ -22,10 +22,9 @@
 package com.mbb.TicketMaven.model;
 
 
+import com.mbb.TicketMaven.model.entity.KeyedEntity;
 
 import java.util.Collection;
-
-import com.mbb.TicketMaven.model.entity.KeyedEntity;
 
 
 /**

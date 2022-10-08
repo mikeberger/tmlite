@@ -193,7 +193,7 @@ public class Prefs {
 	static private Preferences getPrefNode() {
 		// hard code to original prefs location for backward compatiblity
 		Preferences root = Preferences.userRoot();
-		return root.node("com/mbb/TicketMavenLite/common/util");
+		return root.node("com/mbb/TicketMaven/common/util");
 	}
 
 	/**

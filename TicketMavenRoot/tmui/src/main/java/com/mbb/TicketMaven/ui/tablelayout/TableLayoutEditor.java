@@ -22,40 +22,6 @@
 
 package com.mbb.TicketMaven.ui.tablelayout;
 
-import java.awt.Color;
-import java.awt.GridBagConstraints;
-import java.awt.GridBagLayout;
-import java.awt.Point;
-import java.awt.event.ActionEvent;
-import java.awt.event.MouseEvent;
-import java.awt.geom.Point2D;
-import java.awt.geom.Rectangle2D;
-import java.util.Collection;
-import java.util.Hashtable;
-import java.util.Map;
-
-import javax.swing.AbstractAction;
-import javax.swing.ImageIcon;
-import javax.swing.JButton;
-import javax.swing.JOptionPane;
-import javax.swing.JPanel;
-import javax.swing.JPopupMenu;
-import javax.swing.JScrollPane;
-import javax.swing.SwingUtilities;
-import javax.swing.ToolTipManager;
-
-import org.jgraph.JGraph;
-import org.jgraph.event.GraphSelectionEvent;
-import org.jgraph.event.GraphSelectionListener;
-import org.jgraph.graph.BasicMarqueeHandler;
-import org.jgraph.graph.DefaultCellViewFactory;
-import org.jgraph.graph.DefaultGraphCell;
-import org.jgraph.graph.DefaultGraphModel;
-import org.jgraph.graph.GraphConstants;
-import org.jgraph.graph.GraphLayoutCache;
-import org.jgraph.graph.GraphModel;
-import org.jgraph.graph.VertexView;
-
 import com.mbb.TicketMaven.model.ShowModel;
 import com.mbb.TicketMaven.model.TableModel;
 import com.mbb.TicketMaven.model.entity.Layout;
@@ -66,6 +32,20 @@ import com.mbb.TicketMaven.ui.filter.TableLayoutFilterPanel;
 import com.mbb.TicketMaven.ui.util.CircleView;
 import com.mbb.TicketMaven.ui.util.ComponentPrinter;
 import com.mbb.TicketMaven.util.Errmsg;
+import org.jgraph.JGraph;
+import org.jgraph.event.GraphSelectionEvent;
+import org.jgraph.event.GraphSelectionListener;
+import org.jgraph.graph.*;
+
+import javax.swing.*;
+import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.MouseEvent;
+import java.awt.geom.Point2D;
+import java.awt.geom.Rectangle2D;
+import java.util.Collection;
+import java.util.Hashtable;
+import java.util.Map;
 
 public class TableLayoutEditor extends ViewPanel implements
 		GraphSelectionListener, LayoutChangeListener {
