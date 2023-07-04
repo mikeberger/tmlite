@@ -48,17 +48,7 @@ public class LotteryUndoTest {
 
 		LogManager.getLogManager().getLogger("").setLevel(Level.OFF);
 
-		String dbdir = "jdbc:hsqldb:mem:whatever";
-		JdbcDB.setDbUrl(dbdir);
-		JdbcDB.connect(false);
-
-		// import test data
-		InputStream is = new Errmsg().getClass().getResourceAsStream(
-				"/test/data/tm_adjusted.exp");
-		InputStreamReader r = new InputStreamReader(is);
-
-		JdbcDB.executeMultiSQL(new BufferedReader(r));
-		is.close();
+		CreateTestData.createDB();
 
 		// reset to pristine state
 		Collection<Show> shows = ShowModel.getReference().getRecords();

@@ -11,10 +11,8 @@ import java.util.concurrent.TimeUnit;
 
 public class CreateTestData {
 	
-	
-	// TBD seats
 
-	public static void main(String args[]) throws Exception {
+	public static void createDB() throws Exception {
 
 		String dbdir = "jdbc:hsqldb:mem:whatever";
 		JdbcDB.setDbUrl(dbdir);
@@ -39,7 +37,7 @@ public class CreateTestData {
 		ZoneModel.getReference().saveRecord(bzone);
 		zonelist.add(bzone);
 
-		for (int i = 1; i <= 500; i++) {
+		for (int i = 1; i <= 200; i++) {
 			Customer c = CustomerModel.getReference().newRecord();
 			c.setFirstName(faker.name().firstName());
 			c.setLastName(faker.name().lastName());
@@ -86,6 +84,13 @@ public class CreateTestData {
 
 			}
 		}
+
+
+
+	}
+
+	public static void main(String args[]) throws Exception {
+			createDB();
 
 		String sql = DumpJdbcDB.dumpData();
 
