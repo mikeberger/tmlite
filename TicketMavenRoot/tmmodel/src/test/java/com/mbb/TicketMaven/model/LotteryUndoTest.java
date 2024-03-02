@@ -22,24 +22,21 @@
 
 package com.mbb.TicketMaven.model;
 
-import com.mbb.TicketMaven.model.entity.Customer;
-import com.mbb.TicketMaven.model.entity.Show;
-import com.mbb.TicketMaven.model.entity.Ticket;
-import com.mbb.TicketMaven.model.entity.TicketRequest;
-import com.mbb.TicketMaven.model.jdbc.JdbcDB;
-import com.mbb.TicketMaven.util.Errmsg;
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.logging.Level;
+import java.util.logging.LogManager;
+
 import org.junit.AfterClass;
 import org.junit.Assert;
 import org.junit.BeforeClass;
 import org.junit.Test;
 
-import java.io.BufferedReader;
-import java.io.InputStream;
-import java.io.InputStreamReader;
-import java.util.ArrayList;
-import java.util.Collection;
-import java.util.logging.Level;
-import java.util.logging.LogManager;
+import com.mbb.TicketMaven.model.entity.Customer;
+import com.mbb.TicketMaven.model.entity.Show;
+import com.mbb.TicketMaven.model.entity.Ticket;
+import com.mbb.TicketMaven.model.entity.TicketRequest;
+import com.mbb.TicketMaven.model.jdbc.JdbcDB;
 
 public class LotteryUndoTest {
 

@@ -20,110 +20,83 @@
  * #L%
  */
 
-
 package com.mbb.TicketMaven.ui;
 
-import com.mbb.TicketMaven.ui.options.OptionsView;
-import com.mbb.TicketMaven.util.Warning;
-
-import java.awt.*;
+import java.awt.Image;
+import java.awt.Toolkit;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
+import com.mbb.TicketMaven.ui.options.OptionsView;
+
+import dorkbox.systemTray.MenuItem;
+import dorkbox.systemTray.SystemTray;
+
 /**
- * Class JDICTrayIconProxy is the link between TicketMaven and the JDIC system tray icon.
- * As soon as all customers go to Java 6 - we need to replace this with the built-in JRE support
- * for the system tray as JDIC is inconsistent on non-windows systems.
+ * Class JDICTrayIconProxy is the link between TicketMaven and the JDIC system
+ * tray icon. As soon as all customers go to Java 6 - we need to replace this
+ * with the built-in JRE support for the system tray as JDIC is inconsistent on
+ * non-windows systems.
  */
 class TrayIconProxy {
 
 	static private TrayIconProxy singleton = null;
 
-	static public TrayIconProxy getReference()
-	{
-		if( singleton == null )
+	static public TrayIconProxy getReference() {
+		if (singleton == null)
 			singleton = new TrayIconProxy();
-		return( singleton );
+		return (singleton);
 	}
-	private TrayIcon TIcon = null;
 
-    /**
-     * Inits the system tray. Adds the menu items and their callbacks
-     *
-     * @param trayname the trayname
-     */
-    public void init(String trayname) throws Exception
-    {
-        if (TIcon == null)
-        {
+	/**
+	 * Inits the system tray. Adds the menu items and their callbacks
+	 *
+	 * @param trayname the trayname
+	 */
+	public void init(String trayname) throws Exception {
 
-        	if (!SystemTray.isSupported())
-    			throw new Warning("Systray not supported");
+		SystemTray systemTray = SystemTray.get();
+		if (systemTray == null) {
+			throw new RuntimeException("Unable to load SystemTray!");
+		}
 
-    		Image image = Toolkit.getDefaultToolkit().getImage(
-    				getClass().getResource("/resource/tm16.jpg"));
+		Image image = Toolkit.getDefaultToolkit().getImage(getClass().getResource("/resource/tm16.jpg"));
 
-    		TIcon = new TrayIcon(image);
+		systemTray.setImage(image);
 
-    		TIcon.setToolTip(trayname);
+		systemTray.setTooltip(trayname);
 
+		systemTray.getMenu().add(new MenuItem("Open", new OpenListener()));
+		systemTray.getMenu().add(new MenuItem("Options", new OptionsListener()));
+		systemTray.getMenu().add(new MenuItem("Exit", new ExitListener()));
 
-            PopupMenu popup = new PopupMenu();
-            MenuItem item = new MenuItem();
-            item.setLabel( "Open");
-            item.addActionListener(new OpenListener());
-            popup.add(item);
+	}
 
-            item = new MenuItem();
-            item.setLabel("Options");
-            item.addActionListener(new OptionsListener());
-            popup.add(item);
+	// Called when exit option in systray menu is chosen
+	static private class ExitListener implements ActionListener {
 
-            item = new MenuItem();
-            item.setLabel("Exit");
-            item.addActionListener(new ExitListener());
-            popup.add(item);
-
-            TIcon.setPopupMenu(popup);
-            TIcon.addActionListener(new OpenListener());
-
-            SystemTray tray = SystemTray.getSystemTray();
-            tray.add(TIcon);
-        }
-    }
-
-    // Called when exit option in systray menu is chosen
-    static private class ExitListener implements ActionListener {
-
-
-        @Override
+		@Override
 		public void actionPerformed(ActionEvent e) {
-        	UIControl.shutDownUI();
-        }
-    }
-    private class OpenListener implements ActionListener {
+			UIControl.shutDownUI();
+		}
+	}
 
+	private class OpenListener implements ActionListener {
 
-        @Override
+		@Override
 		public void actionPerformed(ActionEvent e) {
-           UIControl.toFront();
-        }
-    }
+			UIControl.toFront();
+		}
+	}
 
+	private class OptionsListener implements ActionListener {
 
-    private class OptionsListener implements ActionListener {
-
-
-        @Override
+		@Override
 		public void actionPerformed(ActionEvent e) {
-            OptionsView mv = OptionsView.getReference();
-            mv.setVisible(true);
-            mv.toFront();
-        }
-    }
-
-
-
-
+			OptionsView mv = OptionsView.getReference();
+			mv.setVisible(true);
+			mv.toFront();
+		}
+	}
 
 }

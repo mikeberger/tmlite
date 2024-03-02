@@ -45,47 +45,8 @@
 					<source>17</source>
 					<target>17</target>
 				</configuration>
-				<dependencies>
-					<dependency>
-						<groupId>org.ow2.asm</groupId>
-						<artifactId>asm</artifactId>
-						<version>6.1.1</version>
-					</dependency>
-				</dependencies>
 			</plugin>
-			<plugin>
-				<groupId>org.codehaus.mojo</groupId>
-				<artifactId>license-maven-plugin</artifactId>
-				<version>2.0.0</version>
-				<executions>
-					<execution>
-						<id>third-party</id>
-						<phase>deploy</phase>
-						<goals>
-							<goal>aggregate-add-third-party</goal>
-							<goal>aggregate-download-licenses</goal>
-						</goals>
-						<configuration />
-					</execution>
-				</executions>
-			</plugin>
-			<plugin>
-				<groupId>org.codehaus.mojo</groupId>
-				<artifactId>versions-maven-plugin</artifactId>
-				<version>1.2</version>
-				<executions>
-					<execution>
-						<id>dep-check</id>
-						<phase>deploy</phase>
-						<goals>
-							<goal>display-dependency-updates</goal>
-							<goal>display-plugin-updates</goal>
-							<goal>display-property-updates</goal>
-						</goals>
-						<configuration />
-					</execution>
-				</executions>
-			</plugin>
+			
 		
 		</plugins>
 	</build>
@@ -95,13 +56,13 @@
 			<dependency>
 				<groupId>junit</groupId>
 				<artifactId>junit</artifactId>
-				<version>4.13.1</version>
+				<version>4.13.2</version>
 				<scope>test</scope>
 			</dependency>
 			<dependency>
 				<groupId>org.hsqldb</groupId>
 				<artifactId>hsqldb</artifactId>
-				<version>2.7.1</version>
+				<version>2.7.2</version>
 			</dependency>
 			<dependency>
 				<groupId>jgraph</groupId>
