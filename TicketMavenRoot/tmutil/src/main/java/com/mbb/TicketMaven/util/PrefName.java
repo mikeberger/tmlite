@@ -129,7 +129,7 @@ public class PrefName {
 
 	/** The LNF. */
 	static public PrefName LNF = new PrefName("lnf",
-			"com.jgoodies.looks.plastic.PlasticXPLookAndFeel");
+			"com.formdev.flatlaf.FlatLightLaf");
 
 	/** The COUNTRY. */
 	static public PrefName COUNTRY = new PrefName("country", "");

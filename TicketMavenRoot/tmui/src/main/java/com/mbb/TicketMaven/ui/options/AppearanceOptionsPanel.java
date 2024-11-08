@@ -154,14 +154,20 @@ class AppearanceOptionsPanel extends OptionsPanel {
 			String name = lnfinfo[i].getClassName();
 			lnfs.add(name);
 		}
-		try {
-			// add jgoodies LNF if it's in the classpath
-			Class.forName("com.jgoodies.looks.plastic.PlasticXPLookAndFeel");
-			lnfs.add("com.jgoodies.looks.plastic.PlasticXPLookAndFeel");
-		} catch (Exception e) {
-			// empty
-		}
 		
+		String[] looks = { 
+				"com.formdev.flatlaf.FlatLightLaf",
+				"com.formdev.flatlaf.FlatDarkLaf"
+				};
+
+		for (String look : looks) {
+			try {
+				Class.forName(look);
+				lnfs.add(look);
+			} catch (Throwable e) {
+				// empty
+			}
+		}
 		for( FlatIJLookAndFeelInfo ijInfo : FlatAllIJThemes.INFOS )
 		{
 			lnfs.add(ijInfo.getClassName());
